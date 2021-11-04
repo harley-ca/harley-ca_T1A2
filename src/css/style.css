@@ -61,6 +61,7 @@ body {
   background-color: salmon;
 }
 
+/* Defining mixin navButtons used to style menu elements */
 .menu {
   position: absolute;
   right: 20%;

@@ -60,6 +60,7 @@ body {
   background-color: salmon
 }
 
+/* Defining mixin navButtons used to style menu elements */
 @mixin navButtons {
   display: inline-flex;
   justify-content: center;
@@ -81,7 +82,7 @@ body {
       border:  0.2em solid whitesmoke;
     }
 }
-  
+
 .menu {
   position: absolute;
   right: 20%;
