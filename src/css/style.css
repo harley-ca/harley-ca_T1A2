@@ -1,1 +1,113 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/*
+  CSS Reset from MeyerWeb
+  http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  CSS Reset End
+*/
+body {
+  background-color: salmon;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu span {
+  color: blue;
+  position: absolute;
+  background-color: black;
+  padding: 15px, 10px;
+  border: 3px solid white;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  height: 50px;
+  width: 50px;
+}
+
+.menu span.hidden {
+  visibility: hidden;
+}
+
+.menu span:nth-child(1).show {
+  -webkit-transform: translate(0px, 70px);
+          transform: translate(0px, 70px);
+  visibility: visible;
+}
+
+.menu span:nth-child(2).show {
+  -webkit-transform: translate(0px, 143px);
+          transform: translate(0px, 143px);
+  visibility: visible;
+}
+
+.menu span:nth-child(3).show {
+  -webkit-transform: translate(0px, 216px);
+          transform: translate(0px, 216px);
+  visibility: visible;
+}
+
+.menu span:nth-child(4).show {
+  -webkit-transform: translate(0px, 289px);
+          transform: translate(0px, 289px);
+  visibility: visible;
+}
+
+.menuimg {
+  max-width: 50px;
+  max-height: 50px;
+}
+/*# sourceMappingURL=style.css.map */
