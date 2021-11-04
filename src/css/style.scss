@@ -59,51 +59,41 @@ table {
 body {
   background-color: salmon
 }
+
+@mixin navButtons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  position: absolute;
+  background-color: whitesmoke;
+  border: 0.2em solid black;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  height: 2em;
+  width: 2em;
+  font-size: 2em;
+  text-decoration: none;
+  box-sizing: border-box;
+    &:hover {
+      background-color: black;
+      color: whitesmoke;
+      border:  0.2em solid whitesmoke;
+    }
+}
   
 .menu {
   position: absolute;
-  right: 15%;
-  top: 2em;
+  right: 20%;
+  top: 15%;
   display: inline-block;
+  font-size: 20px;
   span {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    position: absolute;
-    background-color: whitesmoke;
-    border: 0.2em solid black;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-    height: 2em;
-    width: 2em;
-    font-size: 1.5em;
-    &:hover {
-      background-color: black;
-      color: whitesmoke;
-      border:  0.2em solid whitesmoke;
-    }
+    @include navButtons();
   }
   a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    position: absolute;
-    background-color: whitesmoke;
-    border: 0.2em solid black;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-    height: 2em;
-    width: 2em;
-    font-size: 1.5em;
-    text-decoration: none;
-    font-weight: bold;
-    &:hover {
-      background-color: black;
-      color: whitesmoke;
-      border:  0.2em solid whitesmoke;
-    }
+    @include navButtons();
+  
     
     &.hidden {
       visibility: hidden;
@@ -134,10 +124,17 @@ body {
     }
   }
 }
-
-
-
 .menuimg {
   max-width: 50px;
   max-height: 50px;
+}
+.indexContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .logo {
+    max-height: 20%;
+    max-width: 20%;
+  }
 }
