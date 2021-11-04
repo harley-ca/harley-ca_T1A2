@@ -63,22 +63,31 @@ body {
 
 .menu {
   position: absolute;
-  right: 10%;
-  top: 10%;
-  text-align: center;
+  right: 20%;
+  top: 2em;
+  display: inline-block;
 }
 
 .menu span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: blue;
   position: absolute;
   background-color: black;
-  padding-top: 50%;
   border: 3px solid white;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  height: 50px;
-  width: 50px;
+  height: 2em;
+  width: 2em;
+  font-size: 1.5em;
 }
 
 .menu span.hidden {
@@ -86,26 +95,26 @@ body {
 }
 
 .menu span:nth-child(1).show {
-  -webkit-transform: translate(0px, 70px);
-          transform: translate(0px, 70px);
+  -webkit-transform: translate(0px, 2.5em);
+          transform: translate(0px, 2.5em);
   visibility: visible;
 }
 
 .menu span:nth-child(2).show {
-  -webkit-transform: translate(0px, 143px);
-          transform: translate(0px, 143px);
+  -webkit-transform: translate(0px, 5em);
+          transform: translate(0px, 5em);
   visibility: visible;
 }
 
 .menu span:nth-child(3).show {
-  -webkit-transform: translate(0px, 216px);
-          transform: translate(0px, 216px);
+  -webkit-transform: translate(0px, 7.5em);
+          transform: translate(0px, 7.5em);
   visibility: visible;
 }
 
 .menu span:nth-child(4).show {
-  -webkit-transform: translate(0px, 289px);
-          transform: translate(0px, 289px);
+  -webkit-transform: translate(0px, 10em);
+          transform: translate(0px, 10em);
   visibility: visible;
 }
 

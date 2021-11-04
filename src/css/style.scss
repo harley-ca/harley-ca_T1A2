@@ -62,19 +62,22 @@ body {
   
 .menu {
   position: absolute;
-  right:10%;
-  top: 10%;
-  text-align: center;
+  right: 20%;
+  top: 2em;
+  display: inline-block;
   span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     color: blue;
     position: absolute;
     background-color: black;
-    padding-top: 50%;
     border: 3px solid white;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
-    height: 50px;
-    width: 50px;
+    height: 2em;
+    width: 2em;
+    font-size: 1.5em;
     &.hidden {
       visibility: hidden;
     }
@@ -83,25 +86,25 @@ body {
     }
     &:nth-child(1) {
       &.show {
-        transform: translate(0px, 70px);
+        transform: translate(0px, 2.5em);
         visibility: visible;
       }
     }
     &:nth-child(2) {
       &.show {
-        transform: translate(0px, 143px);
+        transform: translate(0px, 5em);
         visibility: visible;
       }
     }
     &:nth-child(3) {
       &.show {
-        transform: translate(0px, 216px);
+        transform: translate(0px, 7.5em);
         visibility: visible;
       }
     }
     &:nth-child(4) {
       &.show {
-        transform: translate(0px, 289px);
+        transform: translate(0px, 10em);
         visibility: visible;
       }
     }
