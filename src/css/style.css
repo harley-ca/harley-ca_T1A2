@@ -63,7 +63,7 @@ body {
 
 .menu {
   position: absolute;
-  right: 20%;
+  right: 15%;
   top: 2em;
   display: inline-block;
 }
@@ -90,6 +90,12 @@ body {
   font-size: 1.5em;
 }
 
+.menu span:hover {
+  background-color: black;
+  color: whitesmoke;
+  border: 0.2em solid whitesmoke;
+}
+
 .menu a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -110,6 +116,14 @@ body {
   height: 2em;
   width: 2em;
   font-size: 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  background-color: black;
+  color: whitesmoke;
+  border: 0.2em solid whitesmoke;
 }
 
 .menu a.hidden {
