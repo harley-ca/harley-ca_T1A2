@@ -62,14 +62,17 @@ body {
 }
 
 .menu {
-  position: relative;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  text-align: center;
 }
 
 .menu span {
   color: blue;
   position: absolute;
   background-color: black;
-  padding: 15px, 10px;
+  padding-top: 50%;
   border: 3px solid white;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
