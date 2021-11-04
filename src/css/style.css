@@ -78,10 +78,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: blue;
+  color: black;
   position: absolute;
-  background-color: black;
-  border: 3px solid white;
+  background-color: whitesmoke;
+  border: 0.2em solid black;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -90,29 +90,51 @@ body {
   font-size: 1.5em;
 }
 
-.menu span.hidden {
+.menu a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  position: absolute;
+  background-color: whitesmoke;
+  border: 0.2em solid black;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  height: 2em;
+  width: 2em;
+  font-size: 1.5em;
+}
+
+.menu a.hidden {
   visibility: hidden;
 }
 
-.menu span:nth-child(1).show {
+.menu a:nth-child(1).show {
   -webkit-transform: translate(0px, 2.5em);
           transform: translate(0px, 2.5em);
   visibility: visible;
 }
 
-.menu span:nth-child(2).show {
+.menu a:nth-child(2).show {
   -webkit-transform: translate(0px, 5em);
           transform: translate(0px, 5em);
   visibility: visible;
 }
 
-.menu span:nth-child(3).show {
+.menu a:nth-child(3).show {
   -webkit-transform: translate(0px, 7.5em);
           transform: translate(0px, 7.5em);
   visibility: visible;
 }
 
-.menu span:nth-child(4).show {
+.menu a:nth-child(4).show {
   -webkit-transform: translate(0px, 10em);
           transform: translate(0px, 10em);
   visibility: visible;
