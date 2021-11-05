@@ -97,7 +97,7 @@ body {
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 1em;
+  margin-right: 1em;
 }
 
 .menu span:hover {
@@ -129,7 +129,7 @@ body {
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 1em;
+  margin-right: 1em;
 }
 
 .menu a:hover {

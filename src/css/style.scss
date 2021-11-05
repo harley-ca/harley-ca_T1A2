@@ -78,7 +78,7 @@ $button-margin: ($button-size / 3);
   font-size: 5em;
   text-decoration: none;
   box-sizing: border-box;
-  margin: $button-margin;
+  margin-right: $button-margin;
     &:hover {
       background-color: $dark-colour;
       color: $light-colour;
