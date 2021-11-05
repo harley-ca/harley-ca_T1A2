@@ -60,6 +60,7 @@ $light-colour: #f2f3f4;
 $darkish-colour: darkslategray;
 $button-size: 3em;
 $button-border: 0.3em;
+$button-space: ($button-size * 1.5);
 
 /* Defining mixin navButtons used to style dropdown menu elements */
 @mixin navButtons {
@@ -93,8 +94,8 @@ body {
 /* Dropdown menu for navigation on mobile devices */
 .menu {
   position: absolute;
-  right: $button-size;
-  top: $button-size;
+  right: $button-space;
+  top: $button-space;
   display: inline-block;
   span {
     @include navButtons();
