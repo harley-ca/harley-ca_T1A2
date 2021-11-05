@@ -178,11 +178,10 @@ header {
   justify-content: left;
   align-items: left;
   max-height: 100%;
-  max-width: 95%;
+  max-width: 90%;
   border: solid 4px green;
   margin: auto;
   margin-top: 5%;
-  margin-right: 10%;
   font-size: $font-size;
   padding: 1em;
   h1 {
@@ -194,6 +193,7 @@ header {
   h2 {
     font-size: 5em;
     padding: inherit;
+    margin-bottom: 5%;
     text-shadow: 0px 1px 3px $darkish-colour;
   }
   h3 {
@@ -214,7 +214,8 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 3%;
+  margin: 2% 2% 5% 2%;
   align-items: center;
   img {
     width: 55%;
@@ -224,10 +225,10 @@ header {
     width: 35%;
   }
   &:nth-child(odd) {
-    background-color: red;
+    background-color: palegoldenrod;
   }
   &:nth-child(even) {
-    background-color: blue;
+    background-color: palevioletred;
     img {
       order: -1;
     }
