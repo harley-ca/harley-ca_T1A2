@@ -54,16 +54,10 @@ table {
 */
 
 
-
-
-body {
-  background-color: salmon
-}
-
 /* Common design elements defined for SCSS */
 $font-stack: "";
 $dark-colour: black;
-$light-colour: whitesmoke;
+$light-colour: #f2f3f4;
 $darkish-colour: darkslategray;
 
 /* Defining mixin navButtons used to style dropdown menu elements */
@@ -149,11 +143,14 @@ header {
   }
 }
 
+body {
+  background-color: $light-colour;
+}
+
 /* Styling logo wherever it may be */
 .logo {
   max-width: 40%;
   max-height: 40%;
-  border-radius: 50%;
 }
 
 /* Styling main content for index and about page */
