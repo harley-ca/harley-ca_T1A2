@@ -58,8 +58,8 @@ $font-stack: "";
 $dark-colour: black;
 $light-colour: #f2f3f4;
 $darkish-colour: darkslategray;
-$button-size: 4em;
-$button-border: 0.5em;
+$button-size: 3em;
+$button-border: 0.3em;
 
 /* Defining mixin navButtons used to style dropdown menu elements */
 @mixin navButtons {
@@ -74,7 +74,7 @@ $button-border: 0.5em;
   transition: all 0.3s ease-in-out;
   height: $button-size;
   width: $button-size;
-  font-size: $button-size;
+  font-size: 5em;
   text-decoration: none;
   box-sizing: border-box;
     &:hover {
@@ -108,25 +108,25 @@ body {
     }
     &:nth-child(1) {
       &.show {
-        transform: translate(0px, 2.5em);
+        transform: translate(0px, 3.5em);
         visibility: visible;
       }
     }
     &:nth-child(2) {
       &.show {
-        transform: translate(0px, 5em);
+        transform: translate(0px, 7em);
         visibility: visible;
       }
     }
     &:nth-child(3) {
       &.show {
-        transform: translate(0px, 7.5em);
+        transform: translate(0px, 10.5em);
         visibility: visible;
       }
     }
     &:nth-child(4) {
       &.show {
-        transform: translate(0px, 10em);
+        transform: translate(0px, 14em);
         visibility: visible;
       }
     }
