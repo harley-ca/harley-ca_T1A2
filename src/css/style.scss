@@ -157,13 +157,14 @@ body {
 .mainContent {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   max-height: 80%;
   max-width: 70%;
   border: solid 4px green;
   margin: auto;
   margin-top: 5%;
+  font-size: 16px;
   h1 {
     font-size: 4em;
     padding: 1em;
@@ -173,5 +174,8 @@ body {
   }
   p {
     align-self: flex-end;
+  }
+  .logo {
+    align-self: center;
   }
 }

@@ -200,17 +200,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   max-height: 80%;
   max-width: 70%;
   border: solid 4px green;
   margin: auto;
   margin-top: 5%;
+  font-size: 16px;
 }
 
 .mainContent h1 {
@@ -225,5 +226,11 @@ body {
 .mainContent p {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.mainContent .logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */
