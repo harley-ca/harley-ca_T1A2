@@ -206,8 +206,9 @@ body {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  max-height: 80%;
-  max-width: 70%;
+  max-height: 100%;
+  max-width: 95%;
+  margin: 5% 5% 5%;
   border: solid 4px green;
   margin: auto;
   margin-top: 5%;
