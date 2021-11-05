@@ -68,9 +68,10 @@ body {
 /* Dropdown menu for navigation on mobile devices */
 .menu {
   position: absolute;
-  right: 3.9em;
-  top: 3.9em;
+  right: 3em;
+  top: 3em;
   display: inline-block;
+  margin: 1em;
 }
 
 .menu span {
