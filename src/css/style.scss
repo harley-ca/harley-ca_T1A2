@@ -60,7 +60,6 @@ $light-colour: #f2f3f4;
 $darkish-colour: darkslategray;
 $button-size: 3em;
 $button-border: 0.3em;
-$button-space: ($button-size * 1.5);
 
 /* Defining mixin navButtons used to style dropdown menu elements */
 @mixin navButtons {
@@ -75,7 +74,7 @@ $button-space: ($button-size * 1.5);
   transition: all 0.3s ease-in-out;
   height: $button-size;
   width: $button-size;
-  font-size: 5em;
+  font-size: $button-size;
   text-decoration: none;
   box-sizing: border-box;
     &:hover {
@@ -97,7 +96,7 @@ body {
   padding-top: $button-size;
   padding-right: $button-size;
   margin-right: $button-size;
-  right: ($button-size * 4);
+  right: ($button-size * 3);
   display: inline-block;
   span {
     @include navButtons();
