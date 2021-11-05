@@ -53,6 +53,12 @@ table {
 */
 
 
+@font-face {
+  font-family: "GaramondSC"; 
+  src: url('../fonts/Garamond\ Classico\ SC\ Regular.ttf');
+} 
+
+
 /* Common design elements defined for SCSS */
 $font-stack: "";
 $dark-colour: black;
@@ -84,10 +90,12 @@ $button-border: 0.3em;
     }
 }
 
+
 /* Default styling for mobile, changes for higher screen widths */
 body {
   background-color: $light-colour;
   font-size: 20px;
+  font-family: "Garamond Classico SC Regular", garamond, serif;
 }
 
 /* Dropdown menu for navigation on mobile devices */
@@ -96,7 +104,7 @@ body {
   padding-top: $button-size;
   padding-right: $button-size;
   margin-right: $button-size;
-  right: ($button-size * 3);
+  right: ($button-size * 2);
   display: inline-block;
   span {
     @include navButtons();
@@ -175,11 +183,12 @@ header {
   h1 {
     font-size: 4em;
     padding: 1em;
+    font-family: "GaramondSC", Garamond, Serif;
   }
   h2 {
     font-size: 3em;
     padding: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
   }
   p {
     font-size: 2em;
