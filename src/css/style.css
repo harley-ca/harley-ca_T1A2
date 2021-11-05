@@ -160,9 +160,7 @@ table {
 
 /* Styling header for desktop navigation bar */
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -webkit-box-pack: end;
@@ -183,6 +181,7 @@ header a:hover {
 
 body {
   background-color: #f2f3f4;
+  font-size: 20px;
 }
 
 /* Styling logo wherever it may be */
@@ -212,6 +211,7 @@ body {
   border: solid 4px green;
   margin: auto;
   margin-top: 5%;
+  margin-right: 10%;
   font-size: 18px;
   padding: 1em;
 }
@@ -238,5 +238,18 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

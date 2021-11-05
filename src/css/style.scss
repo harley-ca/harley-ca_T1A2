@@ -48,7 +48,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /*
   CSS Reset End
 */
@@ -82,6 +81,8 @@ $darkish-colour: darkslategray;
       border:  0.2em solid $light-colour;
     }
 }
+
+
 
 /* Dropdown menu for navigation on mobile devices */
 .menu {
@@ -129,7 +130,7 @@ $darkish-colour: darkslategray;
 
 /* Styling header for desktop navigation bar */
 header {
-  display: flex;
+  display: none;
   flex-wrap: nowrap;
   justify-content: flex-end;
   a {
@@ -145,6 +146,7 @@ header {
 
 body {
   background-color: $light-colour;
+  font-size: 20px;
 }
 
 /* Styling logo wherever it may be */
@@ -165,6 +167,7 @@ body {
   border: solid 4px green;
   margin: auto;
   margin-top: 5%;
+  margin-right: 10%;
   font-size: 18px;
   padding: 1em;
   h1 {
@@ -183,5 +186,21 @@ body {
   }
   .logo {
     align-self: center;
+  }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header {
+    display: flex;
+  }
+  .menu {
+    display: none;
   }
 }
