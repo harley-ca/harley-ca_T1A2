@@ -68,7 +68,7 @@ $button-space: ($button-size * 1.5);
   justify-content: center;
   align-items: center;
   color: $dark-colour;
-  position: absolute;
+  position: fixed;
   background-color: $light-colour;
   border: $button-border solid $dark-colour;
   border-radius: 50%;
@@ -93,9 +93,11 @@ body {
 
 /* Dropdown menu for navigation on mobile devices */
 .menu {
-  position: absolute;
-  right: $button-space;
-  top: $button-space;
+  position: fixed;
+  padding-top: $button-size;
+  padding-right: $button-size;
+  margin-right: $button-size;
+  right: ($button-size * 4);
   display: inline-block;
   span {
     @include navButtons();

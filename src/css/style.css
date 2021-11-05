@@ -67,9 +67,11 @@ body {
 
 /* Dropdown menu for navigation on mobile devices */
 .menu {
-  position: absolute;
-  right: 4.5em;
-  top: 4.5em;
+  position: fixed;
+  padding-top: 3em;
+  padding-right: 3em;
+  margin-right: 3em;
+  right: 12em;
   display: inline-block;
 }
 
@@ -84,7 +86,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: black;
-  position: absolute;
+  position: fixed;
   background-color: #f2f3f4;
   border: 0.3em solid black;
   border-radius: 50%;
@@ -115,7 +117,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: black;
-  position: absolute;
+  position: fixed;
   background-color: #f2f3f4;
   border: 0.3em solid black;
   border-radius: 50%;
