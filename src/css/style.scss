@@ -58,6 +58,8 @@ $font-stack: "";
 $dark-colour: black;
 $light-colour: #f2f3f4;
 $darkish-colour: darkslategray;
+$button-size: 4em;
+$button-border: 0.5em;
 
 /* Defining mixin navButtons used to style dropdown menu elements */
 @mixin navButtons {
@@ -67,22 +69,26 @@ $darkish-colour: darkslategray;
   color: $dark-colour;
   position: absolute;
   background-color: $light-colour;
-  border: 0.2em solid $dark-colour;
+  border: $button-border solid $dark-colour;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
-  height: 2em;
-  width: 2em;
-  font-size: 2em;
+  height: $button-size;
+  width: $button-size;
+  font-size: $button-size;
   text-decoration: none;
   box-sizing: border-box;
     &:hover {
       background-color: $dark-colour;
       color: $light-colour;
-      border:  0.2em solid $light-colour;
+      border:  $button-border solid $light-colour;
     }
 }
 
-
+/* Default styling for mobile, changes for higher screen widths */
+body {
+  background-color: $light-colour;
+  font-size: 20px;
+}
 
 /* Dropdown menu for navigation on mobile devices */
 .menu {
@@ -90,7 +96,6 @@ $darkish-colour: darkslategray;
   right: 20%;
   top: 15%;
   display: inline-block;
-  font-size: 20px;
   span {
     @include navButtons();
   }
@@ -142,11 +147,6 @@ header {
       text-shadow: 0px 1px 3px $dark-colour;
     }
   }
-}
-
-body {
-  background-color: $light-colour;
-  font-size: 20px;
 }
 
 /* Styling logo wherever it may be */
