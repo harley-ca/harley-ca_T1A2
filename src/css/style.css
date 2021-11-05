@@ -66,6 +66,8 @@ table {
 /* Defining mixin navButtons used to style dropdown menu elements */
 /* Default styling for mobile, changes for higher screen widths */
 body {
+  background-image: url("../images/papertexture2.jpg");
+  background-repeat: repeat;
   background-color: #f2f3f4;
   font-size: 20px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
