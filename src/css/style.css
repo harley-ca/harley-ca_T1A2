@@ -194,8 +194,8 @@ header a:hover {
 
 /* Styling logo wherever it may be */
 .logo {
-  max-width: 40%;
-  max-height: 40%;
+  max-width: 24em;
+  max-height: 24em;
 }
 
 /* Styling main content for index and about page */
@@ -225,22 +225,24 @@ header a:hover {
 }
 
 .mainContent h1 {
-  font-size: 4em;
-  padding: 1em;
+  font-size: 5em;
+  padding: inherit;
   font-family: "GaramondSC", Garamond, Serif;
+  text-shadow: 0px 1px 3px darkslategray;
 }
 
 .mainContent h2 {
-  font-size: 3em;
-  padding: 1em;
+  font-size: 4em;
+  padding: inherit;
   padding-bottom: 2em;
+  text-shadow: 0px 1px 3px darkslategray;
 }
 
 .mainContent p {
   font-size: 2em;
-  padding: 1em;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  padding: inherit;
 }
 
 .mainContent .logo {
