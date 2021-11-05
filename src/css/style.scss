@@ -233,6 +233,14 @@ header {
       order: -1;
     }
   }
+  .blogDate {
+    display: flex;
+    width: 100%;
+    font-size: 2em;
+    text-shadow: 0px 1px 3px $darkish-colour;
+    justify-content: flex-end;
+    
+  }
 }
 
 

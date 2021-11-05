@@ -296,6 +296,18 @@ header a:hover {
           order: -1;
 }
 
+.blogItem .blogDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 2em;
+  text-shadow: 0px 1px 3px darkslategray;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
