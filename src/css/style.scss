@@ -181,6 +181,7 @@ header {
   max-width: 90%;
   border: solid 4px green;
   margin: auto;
+  margin-top: 10%;
   font-size: $font-size;
   padding: 1em;
   h1 {
@@ -216,6 +217,7 @@ header {
   padding: 3%;
   margin: 2% 2% 5% 2%;
   align-items: center;
+  border: inset 3px $light-colour;
   img {
     width: 55%;
     padding-left: 10px;
@@ -223,11 +225,7 @@ header {
   h3 {
     width: 35%;
   }
-  &:nth-child(odd) {
-    background-color: palegoldenrod;
-  }
   &:nth-child(even) {
-    background-color: palevioletred;
     img {
       order: -1;
     }
