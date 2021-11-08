@@ -248,7 +248,7 @@ header a:hover {
 }
 
 .mainContent p {
-  font-size: 1.25em;
+  font-size: 3em;
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: inherit;
