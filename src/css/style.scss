@@ -106,7 +106,7 @@ body {
 /* Dropdown menu for navigation on mobile devices */
 .menu {
   position: fixed;
-  padding-top: $button-size;
+  padding-top: 2em;
   padding-right: $button-size;
   margin-right: $button-size;
   right: ($button-size * 2);
@@ -181,7 +181,7 @@ header {
   max-width: 90%;
   border: solid 4px green;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   font-size: $font-size;
   padding: 1em;
   h1 {

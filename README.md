@@ -22,7 +22,9 @@ Tech stack (e.g. html, css, deployment platform, etc)
 DESCRIPTION
 
 ## Purpose
-Purpose
+
+The purpose of the portfolio site is to exhibit and display my abilities in website design, and create a site with which I can show off other projects I may work on in the future.
+
 ## Functionality & Features
 Function and feats
 ## Sitemap
@@ -30,6 +32,8 @@ sitemap
 ## Screenshots
 screenies
 ## Target Audience
-target audience
+
+I have a number of target audiences with my site, including my educators who will be marking it, future clients, as well as my peers.
+
 ## Tech Stack
 HTML, CSS, SASS, JavaScript, VSCode, GitHub, Netlify
