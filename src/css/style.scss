@@ -91,6 +91,15 @@ $gap-size: ($button-size * 1.1);
     }
 }
 
+/* Mixin to swap menu styles for media queries*/
+@mixin swapToHeader {
+  header {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+}
 
 /* Default styling for mobile, changes for higher screen widths */
 body {
@@ -150,12 +159,15 @@ header {
   display: none;
   flex-wrap: nowrap;
   justify-content: flex-end;
+  align-items: center;
   position: fixed;
+  background-color: rgba(255,255,255,0.5);
   width: 100%;
   top: 0;
   a {
     padding: 0.3em 0.4em;
     color: $dark-colour;
+    font-size: 1.3em;
     text-decoration: none;
     text-shadow: 0px 1px 3px $darkish-colour;
     &:hover {
@@ -166,7 +178,7 @@ header {
     margin-right: auto;
   }
   img {
-    max-height: 40px;
+    max-height: 24px;
   }
 }
 
@@ -266,23 +278,13 @@ body {
   // body {
   //   color:turquoise;
   // }
-  header {
-    display: flex;
-  }
-  .menu {
-    display: none;
-  }
+  @include swapToHeader()
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
 /* Disabled for testing layouts - NOT */
 @media only screen and (max-width: 991px) and (orientation: landscape) {
-  header {
-    display: flex;
-  }
-  .menu {
-    display: none;
-  }
+  @include swapToHeader()
   #headerLogo {
     display: none;
   }

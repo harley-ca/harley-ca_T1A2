@@ -64,6 +64,7 @@ table {
 
 /* Common design elements defined for SCSS */
 /* Defining mixin navButtons used to style dropdown menu elements */
+/* Mixin to swap menu styles for media queries*/
 /* Default styling for mobile, changes for higher screen widths */
 body {
   background-image: url("../images/papertexture2.jpg");
@@ -179,7 +180,11 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
   top: 0;
 }
@@ -187,6 +192,7 @@ header {
 header a {
   padding: 0.3em 0.4em;
   color: black;
+  font-size: 1.3em;
   text-decoration: none;
   text-shadow: 0px 1px 3px darkslategray;
 }
@@ -200,7 +206,7 @@ header #headerLogo {
 }
 
 header img {
-  max-height: 40px;
+  max-height: 24px;
 }
 
 /* Styling logo wherever it may be */
