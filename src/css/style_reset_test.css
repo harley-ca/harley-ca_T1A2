@@ -76,8 +76,10 @@ body {
 /* Dropdown menu for navigation on mobile devices */
 .menu {
   position: fixed;
-  padding-top: 10%;
-  right: 10%;
+  padding-top: 2em;
+  padding-right: 3em;
+  margin-right: 3em;
+  right: 6em;
   display: inline-block;
 }
 
@@ -94,11 +96,8 @@ body {
   color: black;
   position: fixed;
   background-color: #f2f3f4;
-  border: 8px solid black;
+  border: 0.2em solid black;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  font-size: 3.5em;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -109,7 +108,7 @@ body {
 .menu span:hover {
   background-color: black;
   color: #f2f3f4;
-  border: 8px solid #f2f3f4;
+  border: 0.2em solid #f2f3f4;
 }
 
 .menu a {
@@ -125,13 +124,13 @@ body {
   color: black;
   position: fixed;
   background-color: #f2f3f4;
-  border: 8px solid black;
+  border: 0.2em solid black;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  font-size: 3.5em;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  height: 3em;
+  width: 3em;
+  font-size: 3em;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -140,7 +139,7 @@ body {
 .menu a:hover {
   background-color: black;
   color: #f2f3f4;
-  border: 8px solid #f2f3f4;
+  border: 0.2em solid #f2f3f4;
 }
 
 .menu a.hidden {
@@ -148,26 +147,26 @@ body {
 }
 
 .menu a:nth-child(1).show {
-  -webkit-transform: translate(0px, 99px);
-          transform: translate(0px, 99px);
+  -webkit-transform: translate(0px, 3.3em);
+          transform: translate(0px, 3.3em);
   visibility: visible;
 }
 
 .menu a:nth-child(2).show {
-  -webkit-transform: translate(0px, 198px);
-          transform: translate(0px, 198px);
+  -webkit-transform: translate(0px, 6.6em);
+          transform: translate(0px, 6.6em);
   visibility: visible;
 }
 
 .menu a:nth-child(3).show {
-  -webkit-transform: translate(0px, 297px);
-          transform: translate(0px, 297px);
+  -webkit-transform: translate(0px, 9.9em);
+          transform: translate(0px, 9.9em);
   visibility: visible;
 }
 
 .menu a:nth-child(4).show {
-  -webkit-transform: translate(0px, 396px);
-          transform: translate(0px, 396px);
+  -webkit-transform: translate(0px, 13.2em);
+          transform: translate(0px, 13.2em);
   visibility: visible;
 }
 
@@ -205,8 +204,8 @@ header img {
 
 /* Styling logo wherever it may be */
 .logo {
-  max-width: 25%;
-  max-height: 25%;
+  max-width: 24em;
+  max-height: 24em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

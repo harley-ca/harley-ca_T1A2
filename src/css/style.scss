@@ -65,7 +65,8 @@ table {
 $dark-colour: black;
 $light-colour: #f2f3f4;
 $darkish-colour: darkslategray;
-$button-size: 10%;
+$button-size: 90px;
+$gap-size: ($button-size * 1.1);
 
 /* Defining mixin navButtons used to style dropdown menu elements */
 @mixin navButtons {
@@ -74,17 +75,19 @@ $button-size: 10%;
   align-items: center;
   color: $dark-colour;
   position: fixed;
-  height: $button-size;
   background-color: $light-colour;
-  border: 3px solid $dark-colour;
+  border: 8px solid $dark-colour;
   border-radius: 50%;
+  width: $button-size;
+  height: $button-size;
+  font-size: 3.5em;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   box-sizing: border-box;
     &:hover {
       background-color: $dark-colour;
       color: $light-colour;
-      border:  3px solid $light-colour;
+      border:  8px solid $light-colour;
     }
 }
 
@@ -102,7 +105,7 @@ body {
 /* Dropdown menu for navigation on mobile devices */
 .menu {
   position: fixed;
-  padding-top: 2em;
+  padding-top: 10%;
   right: 10%;
   display: inline-block;
   span {
@@ -117,25 +120,25 @@ body {
     }
     &:nth-child(1) {
       &.show {
-        transform: translate(0px, ($button-size + 0.3em));
+        transform: translate(0px, ($gap-size));
         visibility: visible;
       }
     }
     &:nth-child(2) {
       &.show {
-        transform: translate(0px, ($button-size * 2 + 0.6em));
+        transform: translate(0px, ($gap-size * 2));
         visibility: visible;
       }
     }
     &:nth-child(3) {
       &.show {
-        transform: translate(0px, ($button-size * 3 + 0.9em));
+        transform: translate(0px, ($gap-size * 3));
         visibility: visible;
       }
     }
     &:nth-child(4) {
       &.show {
-        transform: translate(0px, ($button-size * 4 + 1.2em));
+        transform: translate(0px, ($gap-size * 4));
         visibility: visible;
       }
     }
