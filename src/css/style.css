@@ -96,8 +96,8 @@ body {
   background-color: #f2f3f4;
   border: 8px solid black;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 200px;
+  height: 200px;
   font-size: 3.5em;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -127,8 +127,8 @@ body {
   background-color: #f2f3f4;
   border: 8px solid black;
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 200px;
+  height: 200px;
   font-size: 3.5em;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -148,26 +148,26 @@ body {
 }
 
 .menu a:nth-child(1).show {
-  -webkit-transform: translate(0px, 99px);
-          transform: translate(0px, 99px);
+  -webkit-transform: translate(0px, 220px);
+          transform: translate(0px, 220px);
   visibility: visible;
 }
 
 .menu a:nth-child(2).show {
-  -webkit-transform: translate(0px, 198px);
-          transform: translate(0px, 198px);
+  -webkit-transform: translate(0px, 440px);
+          transform: translate(0px, 440px);
   visibility: visible;
 }
 
 .menu a:nth-child(3).show {
-  -webkit-transform: translate(0px, 297px);
-          transform: translate(0px, 297px);
+  -webkit-transform: translate(0px, 660px);
+          transform: translate(0px, 660px);
   visibility: visible;
 }
 
 .menu a:nth-child(4).show {
-  -webkit-transform: translate(0px, 396px);
-          transform: translate(0px, 396px);
+  -webkit-transform: translate(0px, 880px);
+          transform: translate(0px, 880px);
   visibility: visible;
 }
 
