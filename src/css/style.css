@@ -310,23 +310,15 @@ header img {
           justify-content: flex-end;
 }
 
-body {
-  color: green;
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 768px) {
   body {
-    color: red;
     font-size: 16px;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  body {
-    color: turquoise;
-  }
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -338,9 +330,11 @@ body {
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
-/* Disabled for testing layouts
+/* Disabled for testing layouts - NOT */
 @media only screen and (max-width: 991px) and (orientation: landscape) {
   header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .menu {
@@ -350,5 +344,4 @@ body {
     display: none;
   }
 }
-*/
 /*# sourceMappingURL=style.css.map */
