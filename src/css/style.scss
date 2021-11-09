@@ -231,7 +231,7 @@ header {
 
 
 /* Styles the blog posts, including images.
-  uses nth-child to alternate post styles for variety*/
+  uses nth-child in media queries to alternate post styles for variety*/
 .blogItem {
   display: flex;
   flex-direction: column;
@@ -256,6 +256,13 @@ header {
     justify-content: flex-end;
     
   }
+}
+
+.pageTitle {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
 }
 
 body {
