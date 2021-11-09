@@ -259,6 +259,7 @@ header img {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: inherit;
+  line-height: 1.3em;
 }
 
 /* Styles the blog posts, including images.
@@ -284,6 +285,7 @@ header img {
 .blogItem img {
   width: 55%;
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .blogItem h3 {
@@ -308,7 +310,20 @@ header img {
           justify-content: flex-end;
 }
 
+@media only screen and (max-width: 599px) {
+  body {
+    color: green;
+  }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 16px;
+    color: red;
+  }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   header {
