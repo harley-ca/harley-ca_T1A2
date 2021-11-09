@@ -77,7 +77,7 @@ body {
 .menu {
   position: fixed;
   padding-top: 10%;
-  right: 10%;
+  right: 30%;
   display: inline-block;
 }
 
@@ -98,7 +98,7 @@ body {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  font-size: 3.5em;
+  font-size: 6em;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -129,7 +129,7 @@ body {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  font-size: 3.5em;
+  font-size: 6em;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
