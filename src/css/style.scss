@@ -107,7 +107,7 @@ body {
   background-repeat: repeat;
   // background-size: 100px;
   background-color: $light-colour;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
 }
 
@@ -186,8 +186,8 @@ header {
 
 /* Styling logo wherever it may be */
 .logo {
-  max-width: 25%;
-  max-height: 25%;
+  max-width: 50%;
+  max-height: 50%;
   align-self: center;
 }
 
@@ -264,7 +264,7 @@ body {
 @media only screen and (min-width: 768px) {
   body {
     // color: red;
-    font-size: 16px;
+    font-size: 18px;
     }
     .mainContent {
       h1 {
@@ -288,13 +288,21 @@ body {
         width: 35%;
       }
     }
+    .logo {
+      max-width: 25%;
+      max-height: 25%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1200px) {
-  // body {
-  //   color:turquoise;
-  // }
+  body {
+    font-size: 16px;
+  }
+  .logo {
+    max-width: 15%;
+    max-height: 15%;
+  }
   @include swapToHeader()
   .blogItem {
     &:nth-child(even) {
