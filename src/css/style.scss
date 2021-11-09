@@ -260,8 +260,8 @@ body {
   //color: green;
 }
   
-/* Small devices (portrait tablets and large phones, up to 991px) */
-@media only screen and (min-width: 1600px) {
+/* Small devices (portrait tablets and large phones, up to ) */
+@media only screen and (min-width: 768px) {
   body {
     // color: red;
     font-size: 16px;
@@ -291,8 +291,7 @@ body {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-/*
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   // body {
   //   color:turquoise;
   // }
@@ -305,14 +304,9 @@ body {
     }
   }
 }
-*/
 
 /* Swap to header navigation and disable logo in header for landscape devices */
-/* Disabled for testing layouts - NOT 
-@media only screen and (max-width: 991px) and (orientation: landscape) {
+/* Disabled for testing layouts - NOT */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
   @include swapToHeader()
-  #headerLogo {
-    display: none;
-  }
 }
-*/
