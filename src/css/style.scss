@@ -250,12 +250,10 @@ header {
   }
 }
 
-@media only screen and (max-width:599px) {
-  body {
-    color: green;
-  }
+body {
+  color: green;
 }
-
+  
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   body {
@@ -266,6 +264,9 @@ header {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  body {
+    color:turquoise;
+  }
   header {
     display: flex;
   }
