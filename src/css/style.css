@@ -77,9 +77,9 @@ body {
 .menu {
   position: fixed;
   padding-top: 2em;
-  padding-right: 2em;
-  margin-right: 2em;
-  right: 4em;
+  padding-right: 3em;
+  margin-right: 3em;
+  right: 6em;
   display: inline-block;
 }
 
@@ -100,9 +100,9 @@ body {
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  height: 2em;
-  width: 2em;
-  font-size: 2em;
+  height: 3em;
+  width: 3em;
+  font-size: 3em;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -131,9 +131,9 @@ body {
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  height: 2em;
-  width: 2em;
-  font-size: 2em;
+  height: 3em;
+  width: 3em;
+  font-size: 3em;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -150,26 +150,26 @@ body {
 }
 
 .menu a:nth-child(1).show {
-  -webkit-transform: translate(0px, 2.3em);
-          transform: translate(0px, 2.3em);
+  -webkit-transform: translate(0px, 3.3em);
+          transform: translate(0px, 3.3em);
   visibility: visible;
 }
 
 .menu a:nth-child(2).show {
-  -webkit-transform: translate(0px, 4.6em);
-          transform: translate(0px, 4.6em);
+  -webkit-transform: translate(0px, 6.6em);
+          transform: translate(0px, 6.6em);
   visibility: visible;
 }
 
 .menu a:nth-child(3).show {
-  -webkit-transform: translate(0px, 6.9em);
-          transform: translate(0px, 6.9em);
+  -webkit-transform: translate(0px, 9.9em);
+          transform: translate(0px, 9.9em);
   visibility: visible;
 }
 
 .menu a:nth-child(4).show {
-  -webkit-transform: translate(0px, 9.2em);
-          transform: translate(0px, 9.2em);
+  -webkit-transform: translate(0px, 13.2em);
+          transform: translate(0px, 13.2em);
   visibility: visible;
 }
 
@@ -207,8 +207,8 @@ header img {
 
 /* Styling logo wherever it may be */
 .logo {
-  max-width: 16em;
-  max-height: 16em;
+  max-width: 24em;
+  max-height: 24em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
