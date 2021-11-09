@@ -194,6 +194,14 @@ header a:hover {
   text-shadow: 0px 1px 3px black;
 }
 
+header #headerLogo {
+  margin-right: auto;
+}
+
+header img {
+  max-height: 40px;
+}
+
 /* Styling logo wherever it may be */
 .logo {
   max-width: 24em;
@@ -220,7 +228,6 @@ header a:hover {
           align-items: left;
   max-height: 100%;
   max-width: 90%;
-  border: solid 4px green;
   margin: auto;
   margin-top: 5%;
   font-size: 20px;
@@ -248,7 +255,7 @@ header a:hover {
 }
 
 .mainContent p {
-  font-size: 2.5em;
+  font-size: 1.5em;
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: inherit;
