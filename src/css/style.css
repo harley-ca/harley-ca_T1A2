@@ -321,6 +321,15 @@ header img {
   body {
     font-size: 16px;
   }
+  .mainContent h1 {
+    font-size: 3.5em;
+  }
+  .mainContent h2 {
+    font-size: 2.5em;
+  }
+  .mainContent h3 {
+    font-size: 2em;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
