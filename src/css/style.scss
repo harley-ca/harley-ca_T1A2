@@ -62,12 +62,11 @@ table {
 
 
 /* Common design elements defined for SCSS */
-$font-size: 20px;
 $dark-colour: black;
 $light-colour: #f2f3f4;
 $darkish-colour: darkslategray;
-$button-size: 3em;
-$button-border: 0.3em;
+$button-size: 2em;
+$button-border: 0.2em;
 
 /* Defining mixin navButtons used to style dropdown menu elements */
 @mixin navButtons {
@@ -99,7 +98,7 @@ body {
   background-repeat: repeat;
   // background-size: 100px;
   background-color: $light-colour;
-  font-size: $font-size;
+  font-size: 24px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
 }
 
@@ -123,25 +122,25 @@ body {
     }
     &:nth-child(1) {
       &.show {
-        transform: translate(0px, 3.5em);
+        transform: translate(0px, ($button-size + 0.3em));
         visibility: visible;
       }
     }
     &:nth-child(2) {
       &.show {
-        transform: translate(0px, 7em);
+        transform: translate(0px, ($button-size * 2 + 0.6em));
         visibility: visible;
       }
     }
     &:nth-child(3) {
       &.show {
-        transform: translate(0px, 10.5em);
+        transform: translate(0px, ($button-size * 3 + 0.9em));
         visibility: visible;
       }
     }
     &:nth-child(4) {
       &.show {
-        transform: translate(0px, 14em);
+        transform: translate(0px, ($button-size * 4 + 1.2em));
         visibility: visible;
       }
     }
@@ -153,6 +152,9 @@ header {
   display: none;
   flex-wrap: nowrap;
   justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  top: 0;
   a {
     padding: 0.3em 0.4em;
     color: $dark-colour;
@@ -190,7 +192,6 @@ header {
   // border: solid 4px green;  Used for development
   margin: auto;
   margin-top: 5%;
-  font-size: $font-size;
   padding: 1em;
   h1 {
     font-size: 5.5em;
@@ -255,10 +256,10 @@ body {
 }
   
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   body {
-    font-size: 16px;
     color: red;
+    font-size: 16px;
     }
 }
 
@@ -274,3 +275,18 @@ body {
     display: none;
   }
 }
+
+/* Swap to header navigation and disable logo in header for landscape devices */
+/* Disabled for testing layouts
+@media only screen and (max-width: 991px) and (orientation: landscape) {
+  header {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+  #headerLogo {
+    display: none;
+  }
+}
+*/

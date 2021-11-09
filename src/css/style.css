@@ -69,7 +69,7 @@ body {
   background-image: url("../images/papertexture2.jpg");
   background-repeat: repeat;
   background-color: #f2f3f4;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
 }
 
@@ -77,9 +77,9 @@ body {
 .menu {
   position: fixed;
   padding-top: 2em;
-  padding-right: 3em;
-  margin-right: 3em;
-  right: 6em;
+  padding-right: 2em;
+  margin-right: 2em;
+  right: 4em;
   display: inline-block;
 }
 
@@ -96,13 +96,13 @@ body {
   color: black;
   position: fixed;
   background-color: #f2f3f4;
-  border: 0.3em solid black;
+  border: 0.2em solid black;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  height: 3em;
-  width: 3em;
-  font-size: 3em;
+  height: 2em;
+  width: 2em;
+  font-size: 2em;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -111,7 +111,7 @@ body {
 .menu span:hover {
   background-color: black;
   color: #f2f3f4;
-  border: 0.3em solid #f2f3f4;
+  border: 0.2em solid #f2f3f4;
 }
 
 .menu a {
@@ -127,13 +127,13 @@ body {
   color: black;
   position: fixed;
   background-color: #f2f3f4;
-  border: 0.3em solid black;
+  border: 0.2em solid black;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  height: 3em;
-  width: 3em;
-  font-size: 3em;
+  height: 2em;
+  width: 2em;
+  font-size: 2em;
   text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -142,7 +142,7 @@ body {
 .menu a:hover {
   background-color: black;
   color: #f2f3f4;
-  border: 0.3em solid #f2f3f4;
+  border: 0.2em solid #f2f3f4;
 }
 
 .menu a.hidden {
@@ -150,26 +150,26 @@ body {
 }
 
 .menu a:nth-child(1).show {
-  -webkit-transform: translate(0px, 3.5em);
-          transform: translate(0px, 3.5em);
+  -webkit-transform: translate(0px, 2.3em);
+          transform: translate(0px, 2.3em);
   visibility: visible;
 }
 
 .menu a:nth-child(2).show {
-  -webkit-transform: translate(0px, 7em);
-          transform: translate(0px, 7em);
+  -webkit-transform: translate(0px, 4.6em);
+          transform: translate(0px, 4.6em);
   visibility: visible;
 }
 
 .menu a:nth-child(3).show {
-  -webkit-transform: translate(0px, 10.5em);
-          transform: translate(0px, 10.5em);
+  -webkit-transform: translate(0px, 6.9em);
+          transform: translate(0px, 6.9em);
   visibility: visible;
 }
 
 .menu a:nth-child(4).show {
-  -webkit-transform: translate(0px, 14em);
-          transform: translate(0px, 14em);
+  -webkit-transform: translate(0px, 9.2em);
+          transform: translate(0px, 9.2em);
   visibility: visible;
 }
 
@@ -181,6 +181,9 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 header a {
@@ -204,8 +207,8 @@ header img {
 
 /* Styling logo wherever it may be */
 .logo {
-  max-width: 24em;
-  max-height: 24em;
+  max-width: 16em;
+  max-height: 16em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -230,7 +233,6 @@ header img {
   max-width: 90%;
   margin: auto;
   margin-top: 5%;
-  font-size: 20px;
   padding: 1em;
 }
 
@@ -315,10 +317,10 @@ body {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   body {
-    font-size: 16px;
     color: red;
+    font-size: 16px;
   }
 }
 
@@ -336,4 +338,19 @@ body {
     display: none;
   }
 }
+
+/* Swap to header navigation and disable logo in header for landscape devices */
+/* Disabled for testing layouts
+@media only screen and (max-width: 991px) and (orientation: landscape) {
+  header {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+  #headerLogo {
+    display: none;
+  }
+}
+*/
 /*# sourceMappingURL=style.css.map */
