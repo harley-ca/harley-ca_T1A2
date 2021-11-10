@@ -307,7 +307,7 @@ body {
       flex-direction: row;
       flex-wrap: wrap;
       img {
-        width: 50%;
+        max-width: 60%;
       }
       h3 {
         width: 30%;
@@ -356,11 +356,36 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1400px) {
-  .mainContent {
-    max-width: 50%;
-    p {
-      font-size: 1.3em;
+
+  body {
+    font-size: 16px;
+    .mainContent {
+      max-width: 50%;
+      h1 {
+        font-size: 3.5em;
+      }
+      h2 {
+        font-size: 2.5em;
+      }
+      h3 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.3em;
+      }
     }
+    .logo {
+      max-width: 15%;
+      max-height: 15%;
+    }
+    .blogItem {
+      &:nth-child(even) {
+        img {
+          order: -1;
+        }
+      }
+    }
+    @include swapToHeader()
   }
 }
 
