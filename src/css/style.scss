@@ -286,13 +286,14 @@ header {
 body {
   //color: green;
 }
+
+
   
 /* Small devices (portrait tablets and large phones, up to ) */
 @media only screen and (min-width: 768px) {
   body {
     // color: red;
     font-size: 18px;
-    }
     .mainContent {
       h1 {
         font-size: 3.5em;
@@ -318,11 +319,38 @@ body {
       max-width: 40%;
       max-height: 40%;
     }
+    @include swapToHeader()
+  }
+}
+
+@media only screen and (min-device-width: 1000px) {
+  body {
+    font-size: 16px;
+    .mainContent {
+      max-width: 70%;
+      h1 {
+        font-size: 3.5em;
+      }
+      h2 {
+        font-size: 2.5em;
+      }
+      h3 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.5em;
+      }
+    }
+    .logo {
+      max-width: 15%;
+      max-height: 15%;
+    }
+    @include swapToHeader()
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1000px) {
-  
   body {
     font-size: 16px;
     .mainContent {
@@ -391,7 +419,7 @@ body {
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
-/* Disabled for testing layouts - NOT */
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) { 
   @include swapToHeader()
 }
+

@@ -350,16 +350,16 @@ header img {
   body {
     font-size: 18px;
   }
-  .mainContent h1 {
+  body .mainContent h1 {
     font-size: 3.5em;
   }
-  .mainContent h2 {
+  body .mainContent h2 {
     font-size: 2.5em;
   }
-  .mainContent h3 {
+  body .mainContent h3 {
     font-size: 2em;
   }
-  .blogItem {
+  body .blogItem {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -367,15 +367,56 @@ header img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .blogItem img {
+  body .blogItem img {
     max-width: 60%;
   }
-  .blogItem h3 {
+  body .blogItem h3 {
     width: 30%;
   }
-  .logo {
+  body .logo {
     max-width: 40%;
     max-height: 40%;
+  }
+  body header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 1000px) {
+  body {
+    font-size: 16px;
+  }
+  body .mainContent {
+    max-width: 70%;
+  }
+  body .mainContent h1 {
+    font-size: 3.5em;
+  }
+  body .mainContent h2 {
+    font-size: 2.5em;
+  }
+  body .mainContent h3 {
+    font-size: 2em;
+  }
+  body .mainContent p {
+    font-size: 1.5em;
+  }
+  body .logo {
+    max-width: 15%;
+    max-height: 15%;
+  }
+  body header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .menu {
+    display: none;
   }
 }
 
@@ -458,8 +499,7 @@ header img {
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
-/* Disabled for testing layouts - NOT */
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
