@@ -419,6 +419,18 @@ header img {
   .mainContent {
     max-width: 50%;
   }
+  .mainContent h1 {
+    font-size: 3.5em;
+  }
+  .mainContent h2 {
+    font-size: 2em;
+  }
+  .mainContent h3 {
+    font-size: 1.5em;
+  }
+  .mainContent p {
+    font-size: 1em;
+  }
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
