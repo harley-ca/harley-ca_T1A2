@@ -325,6 +325,7 @@ body {
 
 @media only screen and (min-device-width: 1000px) {
   body {
+    color: green;
     font-size: 16px;
     .mainContent {
       max-width: 70%;
@@ -352,6 +353,7 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1000px) {
   body {
+    color: deeppink;
     font-size: 16px;
     .mainContent {
       max-width: 70%;
@@ -387,6 +389,7 @@ body {
 @media only screen and (min-width: 1400px) {
 
   body {
+    color:deepskyblue;
     font-size: 16px;
     .mainContent {
       max-width: 50%;
@@ -420,6 +423,9 @@ body {
 
 /* Swap to header navigation and disable logo in header for landscape devices */
 @media only screen and (orientation: landscape) { 
-  @include swapToHeader()
+  body {
+    color: lime;
+    @include swapToHeader()
+  }
 }
 

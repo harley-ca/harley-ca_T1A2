@@ -390,6 +390,7 @@ header img {
 
 @media only screen and (min-device-width: 1000px) {
   body {
+    color: green;
     font-size: 16px;
   }
   body .mainContent {
@@ -424,6 +425,7 @@ header img {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1000px) {
   body {
+    color: deeppink;
     font-size: 16px;
   }
   body .mainContent {
@@ -463,6 +465,7 @@ header img {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1400px) {
   body {
+    color: deepskyblue;
     font-size: 16px;
   }
   body .mainContent {
@@ -501,12 +504,15 @@ header img {
 
 /* Swap to header navigation and disable logo in header for landscape devices */
 @media only screen and (orientation: landscape) {
-  header {
+  body {
+    color: lime;
+  }
+  body header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .menu {
+  body .menu {
     display: none;
   }
 }
