@@ -414,6 +414,13 @@ header img {
   }
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1400px) {
+  .mainContent {
+    max-width: 50%;
+  }
+}
+
 /* Swap to header navigation and disable logo in header for landscape devices */
 /* Disabled for testing layouts - NOT */
 @media only screen and (max-width: 768px) and (orientation: landscape) {
