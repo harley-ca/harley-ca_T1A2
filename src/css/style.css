@@ -380,6 +380,9 @@ header img {
   body {
     font-size: 16px;
   }
+  .mainContent {
+    max-width: 70%;
+  }
   .mainContent h1 {
     font-size: 3.5em;
   }
