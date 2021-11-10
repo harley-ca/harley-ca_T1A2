@@ -254,8 +254,8 @@ header {
   border: inset 3px $light-colour;
   img {
     width: 70%;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    border: inset 2px $light-colour;
+    margin: 10px;
   }
   h3 {
     width: 70%;
@@ -269,6 +269,10 @@ header {
     justify-content: flex-end;
     
   }
+}
+
+.blogContainer {
+  margin-top: 5%;
 }
 
 .pageTitle {
@@ -302,12 +306,11 @@ body {
     .blogItem {
       flex-direction: row;
       flex-wrap: wrap;
-      margin: 2% 2% 5% 2%;
       img {
-        width: 55%;
+        width: 50%;
       }
       h3 {
-        width: 35%;
+        width: 30%;
       }
     }
     .logo {
@@ -321,7 +324,6 @@ body {
   
   body {
     font-size: 16px;
-    }
     .mainContent {
       max-width: 70%;
       h1 {
@@ -337,17 +339,18 @@ body {
         font-size: 1.5em;
       }
     }
-  .logo {
-    max-width: 15%;
-    max-height: 15%;
-  }
-  @include swapToHeader()
-  .blogItem {
-    &:nth-child(even) {
-      img {
-        order: -1;
+    .logo {
+      max-width: 15%;
+      max-height: 15%;
+    }
+    .blogItem {
+      &:nth-child(even) {
+        img {
+          order: -1;
+        }
       }
     }
+    @include swapToHeader()
   }
 }
 
