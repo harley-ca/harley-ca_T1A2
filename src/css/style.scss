@@ -290,9 +290,9 @@ body {
 
   
 /* Small devices (portrait tablets and large phones, up to ) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 570px) {
   body {
-    // color: red;
+    color: red;
     font-size: 18px;
     .mainContent {
       h1 {
