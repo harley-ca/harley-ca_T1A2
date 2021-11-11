@@ -211,8 +211,8 @@ header img {
 
 /* Styling logo wherever it may be */
 .logo {
-  max-width: 40%;
-  max-height: 40%;
+  max-width: 30%;
+  max-height: 30%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -304,13 +304,13 @@ header img {
 }
 
 .blogItem img {
-  width: 70%;
+  width: 90%;
   border: inset 2px #f2f3f4;
   margin: 10px;
 }
 
 .blogItem h3 {
-  width: 70%;
+  width: 80%;
   text-align: center;
 }
 
@@ -346,35 +346,17 @@ header img {
 }
 
 .pageTitle h1 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .pageTitle h2 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 /* Small devices (portrait tablets and large phones, up to ) */
 @media only screen and (min-width: 570px) {
   body {
     color: red;
-  }
-  body .blogItem {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  body .blogItem img {
-    max-width: 60%;
-  }
-  body .blogItem h3 {
-    width: 30%;
-  }
-  body .logo {
-    max-width: 40%;
-    max-height: 40%;
   }
   body header {
     display: -webkit-box;

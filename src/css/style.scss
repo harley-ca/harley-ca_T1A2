@@ -187,8 +187,8 @@ header {
 
 /* Styling logo wherever it may be */
 .logo {
-  max-width: 40%;
-  max-height: 40%;
+  max-width: 30%;
+  max-height: 30%;
   align-self: center;
 }
 
@@ -254,12 +254,12 @@ header {
   align-items: center;
   border: inset 3px $light-colour;
   img {
-    width: 70%;
+    width: 90%;
     border: inset 2px $light-colour;
     margin: 10px;
   }
   h3 {
-    width: 70%;
+    width: 80%;
     text-align: center;
   }
   .blogDate {
@@ -283,10 +283,10 @@ header {
   margin: auto;
   align-items: center;
   h1 {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
   h2 {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -297,20 +297,6 @@ header {
 @media only screen and (min-width: 570px) {
   body {
     color: red;
-    .blogItem {
-      flex-direction: row;
-      flex-wrap: wrap;
-      img {
-        max-width: 60%;
-      }
-      h3 {
-        width: 30%;
-      }
-    }
-    .logo {
-      max-width: 40%;
-      max-height: 40%;
-    }
     @include swapToHeader()
   }
 }
