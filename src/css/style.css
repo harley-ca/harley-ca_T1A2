@@ -357,6 +357,20 @@ header img {
 }
 
 /* Small devices (portrait tablets and large phones, up to ) */
+@media only screen and (min-width: 570px) {
+  body {
+    color: red;
+  }
+  body header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .menu {
+    display: none;
+  }
+}
+
 /* Ignore a small window if on desktop */
 @media only screen and (min-device-width: 1000px) {
   body .logo {
@@ -370,6 +384,9 @@ header img {
   }
   body .menu {
     display: none;
+  }
+  body p {
+    font-size: 1.3em;
   }
 }
 
