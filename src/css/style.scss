@@ -248,19 +248,21 @@ header {
 .blogItem {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding: 2% 3%;
+  margin-bottom: 5%;
   align-items: center;
-  border: inset 3px $light-colour;
+  border: inset 5px rgba(255,255,255,0.3);
   img {
     max-width: 90%;
     max-height: 70%;
-    border: inset 2px $light-colour;
+    border: inset 3px rgba(255,255,255,0.3);
     margin: 10px;
   }
   h3 {
     width: 80%;
     text-align: center;
+    font-weight: bold;
   }
   .blogDate {
     display: flex;
@@ -319,17 +321,25 @@ header {
 
   body {
     .mainContent {
-      max-width: 70%;
+      max-width: 75%;
     }
     .logo {
       max-width: 15%;
       max-height: 15%;
     }
     .blogItem {
+      flex-direction: row;
+      justify-content: space-evenly;
       &:nth-child(even) {
         img {
           order: -1;
         }
+      }
+      img {
+        max-width: 50%;
+      }
+      h3 {
+        width: 40%;
       }
     }
     @include swapToHeader()
@@ -341,7 +351,7 @@ header {
 
   body {
     .mainContent {
-      max-width: 50%;
+      max-width: 60%;
     }
     color:deepskyblue;
     .logo {
@@ -349,6 +359,7 @@ header {
       max-height: 15%;
     }
     .blogItem {
+      flex-direction: row;
       &:nth-child(even) {
         img {
           order: -1;
