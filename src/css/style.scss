@@ -65,7 +65,7 @@ table {
 $dark-colour: black;
 $light-colour: #f2f3f4;
 $darkish-colour: darkslategray;
-$button-size: 100px;
+$button-size: 50px;
 $gap-size: ($button-size * 1.1);
 
 /* Defining mixin navButtons used to style dropdown menu elements */
@@ -80,7 +80,7 @@ $gap-size: ($button-size * 1.1);
   border-radius: 50%;
   width: $button-size;
   height: $button-size;
-  font-size: 3em;
+  font-size: 1em;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   box-sizing: border-box;
