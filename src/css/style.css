@@ -206,7 +206,8 @@ header #headerLogo {
 }
 
 header img {
-  max-height: 24px;
+  max-height: 26px;
+  padding: 0;
 }
 
 /* Styling logo wherever it may be */
@@ -431,9 +432,6 @@ header img {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1400px) {
-  body {
-    color: deepskyblue;
-  }
   body .mainContent {
     max-width: 50%;
   }

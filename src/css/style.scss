@@ -179,7 +179,8 @@ header {
     margin-right: auto;
   }
   img {
-    max-height: 24px;
+    max-height: 26px;
+    padding: 0;
   }
 }
 
@@ -358,7 +359,6 @@ header {
     .mainContent {
       max-width: 50%;
     }
-    color:deepskyblue;
     .logo {
       max-width: 15%;
       max-height: 15%;
