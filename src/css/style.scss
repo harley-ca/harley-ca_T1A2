@@ -107,7 +107,7 @@ body {
   background-repeat: repeat;
   // background-size: 100px;
   background-color: $light-colour;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
   color: purple;
 }
@@ -192,6 +192,7 @@ header {
   align-self: center;
 }
 
+
 /* Styling main content wrapper for all pages */
 .mainContent {
   display: flex;
@@ -200,18 +201,17 @@ header {
   align-items: left;
   max-height: 100%;
   max-width: 90%;
-  // border: solid 4px green;  Used for development
   margin: auto;
   margin-top: 5%;
   padding: 1em;
   h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     padding: inherit;
     font-family: "GaramondSC", Garamond, Serif;
     text-shadow: 0px 1px 3px $darkish-colour;
   }
   h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     padding: inherit;
     text-shadow: 0px 1px 3px $darkish-colour;
   }
@@ -221,7 +221,7 @@ header {
     text-shadow: 0px 1px 3px $darkish-colour;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     align-self: flex-end;
     padding: inherit;
     line-height: 1.3em;
@@ -284,9 +284,6 @@ header {
   align-items: center;
 }
 
-body {
-  //color: green;
-}
 
 
   
