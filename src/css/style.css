@@ -241,7 +241,7 @@ header img {
 }
 
 .mainContent h1 {
-  font-size: 3.5em;
+  font-size: 3.2em;
   padding: inherit;
   font-family: "GaramondSC", Garamond, Serif;
   text-shadow: 0px 1px 3px darkslategrey;
@@ -384,6 +384,9 @@ header img {
   }
   body .menu {
     display: none;
+  }
+  body h1 {
+    font-size: 3.5em;
   }
   body p {
     font-size: 1.3em;
