@@ -96,11 +96,11 @@ body {
   color: black;
   position: fixed;
   background-color: #f2f3f4;
-  border: 4px solid black;
+  border: 6px solid black;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 16px;
+  width: 75px;
+  height: 75px;
+  font-size: 18px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -111,7 +111,7 @@ body {
 .menu span:hover {
   background-color: black;
   color: #f2f3f4;
-  border: 4px solid #f2f3f4;
+  border: 6px solid #f2f3f4;
 }
 
 .menu a {
@@ -127,11 +127,11 @@ body {
   color: black;
   position: fixed;
   background-color: #f2f3f4;
-  border: 4px solid black;
+  border: 6px solid black;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 16px;
+  width: 75px;
+  height: 75px;
+  font-size: 18px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -142,7 +142,7 @@ body {
 .menu a:hover {
   background-color: black;
   color: #f2f3f4;
-  border: 4px solid #f2f3f4;
+  border: 6px solid #f2f3f4;
 }
 
 .menu a.hidden {
@@ -150,26 +150,26 @@ body {
 }
 
 .menu a:nth-child(1).show {
-  -webkit-transform: translate(0px, 55px);
-          transform: translate(0px, 55px);
+  -webkit-transform: translate(0px, 82.5px);
+          transform: translate(0px, 82.5px);
   visibility: visible;
 }
 
 .menu a:nth-child(2).show {
-  -webkit-transform: translate(0px, 110px);
-          transform: translate(0px, 110px);
-  visibility: visible;
-}
-
-.menu a:nth-child(3).show {
   -webkit-transform: translate(0px, 165px);
           transform: translate(0px, 165px);
   visibility: visible;
 }
 
+.menu a:nth-child(3).show {
+  -webkit-transform: translate(0px, 247.5px);
+          transform: translate(0px, 247.5px);
+  visibility: visible;
+}
+
 .menu a:nth-child(4).show {
-  -webkit-transform: translate(0px, 220px);
-          transform: translate(0px, 220px);
+  -webkit-transform: translate(0px, 330px);
+          transform: translate(0px, 330px);
   visibility: visible;
 }
 
