@@ -294,12 +294,12 @@ header {
 
   
 /* Small devices (portrait tablets and large phones, up to ) */
-@media only screen and (min-width: 570px) {
-  body {
-    color: red;
-    @include swapToHeader()
-  }
-}
+// @media only screen and (min-width: 570px) {
+//   body {
+//     color: red;
+//     @include swapToHeader()
+//   }
+// }
 
 /* Ignore a small window if on desktop */
 @media only screen and (min-device-width: 1000px) {
@@ -360,10 +360,10 @@ header {
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
-// @media only screen and (orientation: landscape) { 
-//   body {
-//     color: lime;
-//     @include swapToHeader()
-//   }
-// }
+@media only screen and (orientation: landscape) { 
+  body {
+    color: lime;
+    @include swapToHeader()
+  }
+}
 
