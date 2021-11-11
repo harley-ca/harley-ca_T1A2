@@ -76,11 +76,11 @@ $gap-size: ($button-size * 1.1);
   color: $dark-colour;
   position: fixed;
   background-color: $light-colour;
-  border: 8px solid $dark-colour;
+  border: 4px solid $dark-colour;
   border-radius: 50%;
   width: $button-size;
   height: $button-size;
-  font-size: 4em;
+  font-size: 3em;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   box-sizing: border-box;
@@ -109,6 +109,7 @@ body {
   background-color: $light-colour;
   font-size: 18px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
+  color: purple;
 }
 
 /* Dropdown menu for navigation on mobile devices */
