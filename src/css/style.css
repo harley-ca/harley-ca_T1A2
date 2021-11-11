@@ -212,8 +212,8 @@ header img {
 
 /* Styling logo wherever it may be */
 .logo {
-  max-width: 30%;
-  max-height: 30%;
+  max-width: 40%;
+  max-height: 40%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -372,8 +372,14 @@ header img {
 /* Ignore a small window if on desktop */
 @media only screen and (min-device-width: 1000px) {
   body .logo {
-    max-width: 15%;
-    max-height: 15%;
+    max-width: 25%;
+    max-height: 25%;
+  }
+  body h1 {
+    font-size: 3.5em;
+  }
+  body p {
+    font-size: 1.3em;
   }
   body header {
     display: -webkit-box;
@@ -383,12 +389,6 @@ header img {
   body .menu {
     display: none;
   }
-  body h1 {
-    font-size: 3.5em;
-  }
-  body p {
-    font-size: 1.3em;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -397,8 +397,8 @@ header img {
     max-width: 70%;
   }
   body .logo {
-    max-width: 15%;
-    max-height: 15%;
+    max-width: 20%;
+    max-height: 20%;
   }
   body .blogItem {
     -webkit-box-orient: horizontal;
@@ -434,10 +434,6 @@ header img {
 @media only screen and (min-width: 1400px) {
   body .mainContent {
     max-width: 50%;
-  }
-  body .logo {
-    max-width: 15%;
-    max-height: 15%;
   }
   body .blogItem {
     -webkit-box-orient: horizontal;

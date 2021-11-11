@@ -188,8 +188,8 @@ header {
 
 /* Styling logo wherever it may be */
 .logo {
-  max-width: 30%;
-  max-height: 30%;
+  max-width: 40%;
+  max-height: 40%;
   align-self: center;
 }
 
@@ -307,18 +307,17 @@ header {
 /* Ignore a small window if on desktop */
 @media only screen and (min-device-width: 1000px) {
   body {
-    // color: green;
     .logo {
-      max-width: 15%;
-      max-height: 15%;
+      max-width: 25%;
+      max-height: 25%;
     }
-    @include swapToHeader()
     h1 {
       font-size: 3.5em;
     }
     p {
       font-size: 1.3em;
     }
+    @include swapToHeader()
   }
 }
 
@@ -330,8 +329,8 @@ header {
       max-width: 70%;
     }
     .logo {
-      max-width: 15%;
-      max-height: 15%;
+      max-width: 20%;
+      max-height: 20%;
     }
     .blogItem {
       flex-direction: row;
@@ -358,10 +357,6 @@ header {
   body {
     .mainContent {
       max-width: 50%;
-    }
-    .logo {
-      max-width: 15%;
-      max-height: 15%;
     }
     .blogItem {
       flex-direction: row;
