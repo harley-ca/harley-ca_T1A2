@@ -260,11 +260,11 @@ header img {
 }
 
 .mainContent p {
-  font-size: 1.3em;
+  font-size: 1.2em;
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: inherit;
-  line-height: 1.3em;
+  line-height: 1.2em;
 }
 
 .mainContent .aboutLinks {
