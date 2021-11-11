@@ -211,12 +211,12 @@ header {
     text-shadow: 0px 1px 3px $darkish-colour;
   }
   h2 {
-    font-size: 2.5em;
+    font-size: 2.3em;
     padding: inherit;
     text-shadow: 0px 1px 3px $darkish-colour;
   }
   h3 {
-    font-size: 2em;
+    font-size: 2.2em;
     padding: inherit;
     text-shadow: 0px 1px 3px $darkish-colour;
   }
@@ -299,7 +299,6 @@ header {
 /* Small devices (portrait tablets and large phones, up to ) */
 @media only screen and (min-width: 570px) {
   body {
-    color: red;
     @include swapToHeader()
   }
 }
@@ -327,7 +326,7 @@ header {
 
   body {
     .mainContent {
-      max-width: 75%;
+      max-width: 70%;
     }
     .logo {
       max-width: 15%;
@@ -357,7 +356,7 @@ header {
 
   body {
     .mainContent {
-      max-width: 60%;
+      max-width: 50%;
     }
     color:deepskyblue;
     .logo {
