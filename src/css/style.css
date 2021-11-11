@@ -81,6 +81,7 @@ body {
   padding-top: 0;
   right: 25%;
   display: inline-block;
+  font-size: 20px;
 }
 
 .menu span {
@@ -100,7 +101,6 @@ body {
   border-radius: 50%;
   width: 75px;
   height: 75px;
-  font-size: 18px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -131,7 +131,6 @@ body {
   border-radius: 50%;
   width: 75px;
   height: 75px;
-  font-size: 18px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -212,8 +211,8 @@ header img {
 
 /* Styling logo wherever it may be */
 .logo {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 40%;
+  max-height: 40%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -346,6 +345,14 @@ header img {
           align-items: center;
 }
 
+.pageTitle h1 {
+  margin-bottom: 1em;
+}
+
+.pageTitle h2 {
+  margin-bottom: 1em;
+}
+
 /* Small devices (portrait tablets and large phones, up to ) */
 @media only screen and (min-width: 570px) {
   body {
@@ -403,6 +410,9 @@ header img {
   body {
     color: deeppink;
   }
+  body .mainContent {
+    max-width: 70%;
+  }
   body .logo {
     max-width: 15%;
     max-height: 15%;
@@ -426,6 +436,9 @@ header img {
 @media only screen and (min-width: 1400px) {
   body {
     color: deepskyblue;
+  }
+  body .mainContent {
+    max-width: 50%;
   }
   body .logo {
     max-width: 15%;
