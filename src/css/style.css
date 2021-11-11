@@ -67,7 +67,7 @@ table {
 /* Mixin to swap menu styles for media queries*/
 /* Default styling for mobile, changes for higher screen widths */
 body {
-  background-image: url("../images/papertexture3.jpg");
+  background-image: url("../images/papertexture3.png");
   background-repeat: repeat;
   background-color: white;
   font-size: 16px;
