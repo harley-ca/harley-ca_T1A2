@@ -63,8 +63,8 @@ table {
 
 /* Common design elements defined for SCSS */
 $dark-colour: black;
-$light-colour: #f2f3f4;
-$darkish-colour: darkslategray;
+$light-colour: white;
+$darkish-colour: darkslategrey;
 $button-size: 75px;
 $gap-size: ($button-size * 1.1);
 
@@ -108,7 +108,7 @@ body {
   background-color: $light-colour;
   font-size: 16px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
-  color: purple;
+  color: $dark-colour;
 }
 
 /* Dropdown menu for navigation on mobile devices */
@@ -249,12 +249,12 @@ header {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 3%;
-  margin: 2% auto 5% auto;
+  padding: 2% 3%;
   align-items: center;
   border: inset 3px $light-colour;
   img {
-    width: 90%;
+    max-width: 90%;
+    max-height: 70%;
     border: inset 2px $light-colour;
     margin: 10px;
   }
@@ -283,7 +283,6 @@ header {
   margin: auto;
   align-items: center;
   text-align: center;
-  max-width: 90%;
   h1 {
     margin-bottom: 0.5em;
   }
@@ -306,7 +305,7 @@ header {
 /* Ignore a small window if on desktop */
 @media only screen and (min-device-width: 1000px) {
   body {
-    color: green;
+    // color: green;
     .logo {
       max-width: 15%;
       max-height: 15%;
@@ -322,7 +321,6 @@ header {
     .mainContent {
       max-width: 70%;
     }
-    color: deeppink;
     .logo {
       max-width: 15%;
       max-height: 15%;
@@ -364,7 +362,7 @@ header {
 /* Swap to header navigation and disable logo in header for landscape devices */
 @media only screen and (orientation: landscape) { 
   body {
-    color: lime;
+    // color: lime;
     @include swapToHeader()
   }
 }

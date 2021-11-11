@@ -69,10 +69,10 @@ table {
 body {
   background-image: url("../images/papertexture2.jpg");
   background-repeat: repeat;
-  background-color: #f2f3f4;
+  background-color: white;
   font-size: 16px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
-  color: purple;
+  color: black;
 }
 
 /* Dropdown menu for navigation on mobile devices */
@@ -96,7 +96,7 @@ body {
           align-items: center;
   color: black;
   position: fixed;
-  background-color: #f2f3f4;
+  background-color: white;
   border: 6px solid black;
   border-radius: 50%;
   width: 75px;
@@ -110,8 +110,8 @@ body {
 
 .menu span:hover {
   background-color: black;
-  color: #f2f3f4;
-  border: 6px solid #f2f3f4;
+  color: white;
+  border: 6px solid white;
 }
 
 .menu a {
@@ -126,7 +126,7 @@ body {
           align-items: center;
   color: black;
   position: fixed;
-  background-color: #f2f3f4;
+  background-color: white;
   border: 6px solid black;
   border-radius: 50%;
   width: 75px;
@@ -140,8 +140,8 @@ body {
 
 .menu a:hover {
   background-color: black;
-  color: #f2f3f4;
-  border: 6px solid #f2f3f4;
+  color: white;
+  border: 6px solid white;
 }
 
 .menu a.hidden {
@@ -194,7 +194,7 @@ header a {
   color: black;
   font-size: 1.3em;
   text-decoration: none;
-  text-shadow: 0px 1px 3px darkslategray;
+  text-shadow: 0px 1px 3px darkslategrey;
 }
 
 header a:hover {
@@ -244,19 +244,19 @@ header img {
   font-size: 3.5em;
   padding: inherit;
   font-family: "GaramondSC", Garamond, Serif;
-  text-shadow: 0px 1px 3px darkslategray;
+  text-shadow: 0px 1px 3px darkslategrey;
 }
 
 .mainContent h2 {
   font-size: 2.5em;
   padding: inherit;
-  text-shadow: 0px 1px 3px darkslategray;
+  text-shadow: 0px 1px 3px darkslategrey;
 }
 
 .mainContent h3 {
   font-size: 2em;
   padding: inherit;
-  text-shadow: 0px 1px 3px darkslategray;
+  text-shadow: 0px 1px 3px darkslategrey;
 }
 
 .mainContent p {
@@ -276,7 +276,7 @@ header img {
   color: black;
   font-size: 2.5em;
   text-decoration: none;
-  text-shadow: 0px 1px 3px darkslategray;
+  text-shadow: 0px 1px 3px darkslategrey;
 }
 
 .mainContent .aboutLinks a:hover {
@@ -295,17 +295,17 @@ header img {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 3%;
-  margin: 2% auto 5% auto;
+  padding: 2% 3%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: inset 3px #f2f3f4;
+  border: inset 3px white;
 }
 
 .blogItem img {
-  width: 90%;
-  border: inset 2px #f2f3f4;
+  max-width: 90%;
+  max-height: 70%;
+  border: inset 2px white;
   margin: 10px;
 }
 
@@ -321,7 +321,7 @@ header img {
   width: 100%;
   font-size: 1.5em;
   color: darkslategrey;
-  text-shadow: 0px 1px 3px darkslategray;
+  text-shadow: 0px 1px 3px darkslategrey;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -344,7 +344,6 @@ header img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  max-width: 90%;
 }
 
 .pageTitle h1 {
@@ -358,9 +357,6 @@ header img {
 /* Small devices (portrait tablets and large phones, up to ) */
 /* Ignore a small window if on desktop */
 @media only screen and (min-device-width: 1000px) {
-  body {
-    color: green;
-  }
   body .logo {
     max-width: 15%;
     max-height: 15%;
@@ -377,9 +373,6 @@ header img {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1000px) {
-  body {
-    color: deeppink;
-  }
   body .mainContent {
     max-width: 70%;
   }
@@ -431,9 +424,6 @@ header img {
 
 /* Swap to header navigation and disable logo in header for landscape devices */
 @media only screen and (orientation: landscape) {
-  body {
-    color: lime;
-  }
   body header {
     display: -webkit-box;
     display: -ms-flexbox;
