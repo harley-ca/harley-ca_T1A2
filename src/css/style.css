@@ -70,8 +70,9 @@ body {
   background-image: url("../images/papertexture2.jpg");
   background-repeat: repeat;
   background-color: #f2f3f4;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
+  color: purple;
 }
 
 /* Dropdown menu for navigation on mobile devices */
@@ -95,11 +96,11 @@ body {
   color: black;
   position: fixed;
   background-color: #f2f3f4;
-  border: 8px solid black;
+  border: 4px solid black;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  font-size: 6em;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -110,7 +111,7 @@ body {
 .menu span:hover {
   background-color: black;
   color: #f2f3f4;
-  border: 8px solid #f2f3f4;
+  border: 4px solid #f2f3f4;
 }
 
 .menu a {
@@ -126,11 +127,11 @@ body {
   color: black;
   position: fixed;
   background-color: #f2f3f4;
-  border: 8px solid black;
+  border: 4px solid black;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  font-size: 6em;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -141,7 +142,7 @@ body {
 .menu a:hover {
   background-color: black;
   color: #f2f3f4;
-  border: 8px solid #f2f3f4;
+  border: 4px solid #f2f3f4;
 }
 
 .menu a.hidden {
@@ -149,26 +150,26 @@ body {
 }
 
 .menu a:nth-child(1).show {
+  -webkit-transform: translate(0px, 55px);
+          transform: translate(0px, 55px);
+  visibility: visible;
+}
+
+.menu a:nth-child(2).show {
   -webkit-transform: translate(0px, 110px);
           transform: translate(0px, 110px);
   visibility: visible;
 }
 
-.menu a:nth-child(2).show {
-  -webkit-transform: translate(0px, 220px);
-          transform: translate(0px, 220px);
-  visibility: visible;
-}
-
 .menu a:nth-child(3).show {
-  -webkit-transform: translate(0px, 330px);
-          transform: translate(0px, 330px);
+  -webkit-transform: translate(0px, 165px);
+          transform: translate(0px, 165px);
   visibility: visible;
 }
 
 .menu a:nth-child(4).show {
-  -webkit-transform: translate(0px, 440px);
-          transform: translate(0px, 440px);
+  -webkit-transform: translate(0px, 220px);
+          transform: translate(0px, 220px);
   visibility: visible;
 }
 
@@ -241,26 +242,26 @@ header img {
 }
 
 .mainContent h1 {
-  font-size: 5.5em;
+  font-size: 3.5em;
   padding: inherit;
   font-family: "GaramondSC", Garamond, Serif;
   text-shadow: 0px 1px 3px darkslategray;
 }
 
 .mainContent h2 {
-  font-size: 4.5em;
+  font-size: 2.5em;
   padding: inherit;
   text-shadow: 0px 1px 3px darkslategray;
 }
 
 .mainContent h3 {
-  font-size: 3em;
+  font-size: 2em;
   padding: inherit;
   text-shadow: 0px 1px 3px darkslategray;
 }
 
 .mainContent p {
-  font-size: 2em;
+  font-size: 1.3em;
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: inherit;
@@ -349,16 +350,6 @@ header img {
 @media only screen and (min-width: 570px) {
   body {
     color: red;
-    font-size: 18px;
-  }
-  body .mainContent h1 {
-    font-size: 3.5em;
-  }
-  body .mainContent h2 {
-    font-size: 2.5em;
-  }
-  body .mainContent h3 {
-    font-size: 2em;
   }
   body .blogItem {
     -webkit-box-orient: horizontal;
@@ -388,25 +379,10 @@ header img {
   }
 }
 
+/* Ignore a small window if on desktop */
 @media only screen and (min-device-width: 1000px) {
   body {
     color: green;
-    font-size: 16px;
-  }
-  body .mainContent {
-    max-width: 70%;
-  }
-  body .mainContent h1 {
-    font-size: 3.5em;
-  }
-  body .mainContent h2 {
-    font-size: 2.5em;
-  }
-  body .mainContent h3 {
-    font-size: 2em;
-  }
-  body .mainContent p {
-    font-size: 1.5em;
   }
   body .logo {
     max-width: 15%;
@@ -426,22 +402,6 @@ header img {
 @media only screen and (min-width: 1000px) {
   body {
     color: deeppink;
-    font-size: 16px;
-  }
-  body .mainContent {
-    max-width: 70%;
-  }
-  body .mainContent h1 {
-    font-size: 3.5em;
-  }
-  body .mainContent h2 {
-    font-size: 2.5em;
-  }
-  body .mainContent h3 {
-    font-size: 2em;
-  }
-  body .mainContent p {
-    font-size: 1.5em;
   }
   body .logo {
     max-width: 15%;
@@ -466,22 +426,6 @@ header img {
 @media only screen and (min-width: 1400px) {
   body {
     color: deepskyblue;
-    font-size: 16px;
-  }
-  body .mainContent {
-    max-width: 50%;
-  }
-  body .mainContent h1 {
-    font-size: 3.5em;
-  }
-  body .mainContent h2 {
-    font-size: 2.5em;
-  }
-  body .mainContent h3 {
-    font-size: 2em;
-  }
-  body .mainContent p {
-    font-size: 1.3em;
   }
   body .logo {
     max-width: 15%;
@@ -503,17 +447,4 @@ header img {
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
-@media only screen and (orientation: landscape) {
-  body {
-    color: lime;
-  }
-  body header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  body .menu {
-    display: none;
-  }
-}
 /*# sourceMappingURL=style.css.map */

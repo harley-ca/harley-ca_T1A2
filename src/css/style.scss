@@ -291,18 +291,6 @@ header {
 @media only screen and (min-width: 570px) {
   body {
     color: red;
-    font-size: 18px;
-    .mainContent {
-      h1 {
-        font-size: 3.5em;
-      }
-      h2 {
-        font-size: 2.5em;
-      }
-      h3 {
-        font-size: 2em;
-      }
-    }
     .blogItem {
       flex-direction: row;
       flex-wrap: wrap;
@@ -321,25 +309,10 @@ header {
   }
 }
 
+/* Ignore a small window if on desktop */
 @media only screen and (min-device-width: 1000px) {
   body {
     color: green;
-    font-size: 16px;
-    .mainContent {
-      max-width: 70%;
-      h1 {
-        font-size: 3.5em;
-      }
-      h2 {
-        font-size: 2.5em;
-      }
-      h3 {
-        font-size: 2em;
-      }
-      p {
-        font-size: 1.5em;
-      }
-    }
     .logo {
       max-width: 15%;
       max-height: 15%;
@@ -352,22 +325,6 @@ header {
 @media only screen and (min-width: 1000px) {
   body {
     color: deeppink;
-    font-size: 16px;
-    .mainContent {
-      max-width: 70%;
-      h1 {
-        font-size: 3.5em;
-      }
-      h2 {
-        font-size: 2.5em;
-      }
-      h3 {
-        font-size: 2em;
-      }
-      p {
-        font-size: 1.5em;
-      }
-    }
     .logo {
       max-width: 15%;
       max-height: 15%;
@@ -388,22 +345,6 @@ header {
 
   body {
     color:deepskyblue;
-    font-size: 16px;
-    .mainContent {
-      max-width: 50%;
-      h1 {
-        font-size: 3.5em;
-      }
-      h2 {
-        font-size: 2.5em;
-      }
-      h3 {
-        font-size: 2em;
-      }
-      p {
-        font-size: 1.3em;
-      }
-    }
     .logo {
       max-width: 15%;
       max-height: 15%;
@@ -420,10 +361,10 @@ header {
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
-@media only screen and (orientation: landscape) { 
-  body {
-    color: lime;
-    @include swapToHeader()
-  }
-}
+// @media only screen and (orientation: landscape) { 
+//   body {
+//     color: lime;
+//     @include swapToHeader()
+//   }
+// }
 
