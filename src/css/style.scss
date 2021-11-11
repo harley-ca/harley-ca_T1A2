@@ -65,7 +65,7 @@ table {
 $dark-colour: black;
 $light-colour: #f2f3f4;
 $darkish-colour: darkslategray;
-$button-size: 200px;
+$button-size: 100px;
 $gap-size: ($button-size * 1.1);
 
 /* Defining mixin navButtons used to style dropdown menu elements */
@@ -80,14 +80,14 @@ $gap-size: ($button-size * 1.1);
   border-radius: 50%;
   width: $button-size;
   height: $button-size;
-  font-size: 6em;
+  font-size: 4em;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   box-sizing: border-box;
     &:hover {
       background-color: $dark-colour;
       color: $light-colour;
-      border:  8px solid $light-colour;
+      border:  4px solid $light-colour;
     }
 }
 
@@ -107,7 +107,7 @@ body {
   background-repeat: repeat;
   // background-size: 100px;
   background-color: $light-colour;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
 }
 
@@ -204,23 +204,23 @@ header {
   margin-top: 5%;
   padding: 1em;
   h1 {
-    font-size: 5.5em;
+    font-size: 4em;
     padding: inherit;
     font-family: "GaramondSC", Garamond, Serif;
     text-shadow: 0px 1px 3px $darkish-colour;
   }
   h2 {
-    font-size: 4.5em;
-    padding: inherit;
-    text-shadow: 0px 1px 3px $darkish-colour;
-  }
-  h3 {
     font-size: 3em;
     padding: inherit;
     text-shadow: 0px 1px 3px $darkish-colour;
   }
-  p {
+  h3 {
     font-size: 2em;
+    padding: inherit;
+    text-shadow: 0px 1px 3px $darkish-colour;
+  }
+  p {
+    font-size: 1.5em;
     align-self: flex-end;
     padding: inherit;
     line-height: 1.3em;
