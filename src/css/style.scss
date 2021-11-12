@@ -320,18 +320,11 @@ main {
   }
 }
 
-.spaced {
-  margin-top: 15%;
-}
-
   
 /* Small devices (portrait tablets and large phones, up to ) */
 @media only screen and (min-width: 570px) {
   body {
     @include swapToHeader()
-  }
-  .spaced {
-    margin-top: 0;
   }
 }
 
