@@ -418,6 +418,10 @@ main .aboutLinks a:hover {
   margin-bottom: 0.5em;
 }
 
+.spacer {
+  height: 10%;
+}
+
 /* Small devices (portrait tablets and large phones, up to ) */
 @media only screen and (min-width: 570px) {
   body header {
@@ -426,6 +430,9 @@ main .aboutLinks a:hover {
     display: flex;
   }
   body nav {
+    display: none;
+  }
+  .spacer {
     display: none;
   }
 }
@@ -448,6 +455,9 @@ main .aboutLinks a:hover {
     display: flex;
   }
   body nav {
+    display: none;
+  }
+  .spacer {
     display: none;
   }
 }
@@ -489,6 +499,9 @@ main .aboutLinks a:hover {
   body nav {
     display: none;
   }
+  .spacer {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -515,6 +528,9 @@ main .aboutLinks a:hover {
   body nav {
     display: none;
   }
+  .spacer {
+    display: none;
+  }
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
@@ -525,6 +541,9 @@ main .aboutLinks a:hover {
     display: flex;
   }
   body nav {
+    display: none;
+  }
+  .spacer {
     display: none;
   }
 }

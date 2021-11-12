@@ -320,13 +320,18 @@ main {
   }
 }
 
-
+.spacer {
+  height: 10%;
+}
 
   
 /* Small devices (portrait tablets and large phones, up to ) */
 @media only screen and (min-width: 570px) {
   body {
     @include swapToHeader()
+  }
+  .spacer {
+    display: none;
   }
 }
 
@@ -344,6 +349,9 @@ main {
       font-size: 1.3em;
     }
     @include swapToHeader()
+  }
+  .spacer {
+    display: none;
   }
 }
 
@@ -375,6 +383,9 @@ main {
     }
     @include swapToHeader()
   }
+  .spacer {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -394,6 +405,9 @@ main {
     }
     @include swapToHeader()
   }
+  .spacer {
+    display: none;
+  }
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
@@ -401,6 +415,9 @@ main {
   body {
     // color: lime;
     @include swapToHeader()
+  }
+  .spacer {
+    display: none;
   }
 }
 
