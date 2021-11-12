@@ -62,9 +62,9 @@ table {
 
 
 /* Common design elements defined for SCSS */
-$dark-colour: black;
-$light-colour: white;
-$darkish-colour: darkslategrey;
+$contentColor1: black;
+$contentColor3: white;
+$contentColor2: darkslategrey;
 $button-size: 75px;
 $gap-size: ($button-size * 1.1);
 
@@ -73,10 +73,10 @@ $gap-size: ($button-size * 1.1);
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: $dark-colour;
+  color: $contentColor1;
   position: fixed;
-  background-color: $light-colour;
-  border: 6px solid $dark-colour;
+  background-color: $contentColor3;
+  border: 6px solid $contentColor1;
   border-radius: 50%;
   width: $button-size;
   height: $button-size;
@@ -84,9 +84,9 @@ $gap-size: ($button-size * 1.1);
   text-decoration: none;
   box-sizing: border-box;
     &:hover {
-      background-color: $dark-colour;
-      color: $light-colour;
-      border:  6px solid $light-colour;
+      background-color: $contentColor1;
+      color: $contentColor3;
+      border:  6px solid $contentColor3;
     }
 }
 
@@ -105,10 +105,10 @@ body {
   background-image: url("../images/papertexture3.png");
   background-repeat: repeat;
   // background-size: 100px;
-  background-color: $light-colour;
+  background-color: $contentColor3;
   font-size: 16px;
   font-family: "Garamond Classico SC Regular", garamond, serif;
-  color: $dark-colour;
+  color: $contentColor1;
 }
 
 /* Dropdown menu for navigation on mobile devices */
@@ -167,12 +167,12 @@ header {
   top: 0;
   a {
     padding: 0.3em 0.4em;
-    color: $dark-colour;
+    color: $contentColor1;
     font-size: 1.3em;
     text-decoration: none;
-    text-shadow: 0px 1px 3px $darkish-colour;
+    text-shadow: 0px 1px 3px $contentColor2;
     &:hover {
-      text-shadow: 0px 1px 3px $dark-colour;
+      text-shadow: 0px 1px 3px $contentColor1;
     }
   }
   #headerLogo {
@@ -195,12 +195,12 @@ footer {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     padding: 0.3em 0.4em;
-    color: $dark-colour;
+    color: $contentColor1;
     font-size: 2em;
     text-decoration: none;
-    text-shadow: 0px 1px 3px $darkish-colour;
+    text-shadow: 0px 1px 3px $contentColor2;
     &:hover {
-      text-shadow: 0px 1px 3px $dark-colour;
+      text-shadow: 0px 1px 3px $contentColor1;
     }
   }
 }
@@ -235,17 +235,17 @@ footer {
     font-size: 3.2em;
     padding: inherit;
     font-family: "GaramondSC", Garamond, Serif;
-    text-shadow: 0px 1px 3px $darkish-colour;
+    text-shadow: 0px 1px 3px $contentColor2;
   }
   h2 {
     font-size: 2.3em;
     padding: inherit;
-    text-shadow: 0px 1px 3px $darkish-colour;
+    text-shadow: 0px 1px 3px $contentColor2;
   }
   h3 {
     font-size: 2.2em;
     padding: inherit;
-    text-shadow: 0px 1px 3px $darkish-colour;
+    text-shadow: 0px 1px 3px $contentColor2;
   }
   p {
     font-size: 1.2em;
@@ -257,12 +257,12 @@ footer {
     padding: inherit;
     a {
       padding: inherit;
-      color: $dark-colour;
+      color: $contentColor1;
       font-size: 2.5em;
       text-decoration: none;
-      text-shadow: 0px 1px 3px $darkish-colour;
+      text-shadow: 0px 1px 3px $contentColor2;
       &:hover {
-        text-shadow: 0px 1px 3px $dark-colour;
+        text-shadow: 0px 1px 3px $contentColor1;
       }
     } 
   }
@@ -296,7 +296,7 @@ footer {
     width: 100%;
     font-size: 1.5em;
     color: darkslategrey;
-    text-shadow: 0px 1px 3px $darkish-colour;
+    text-shadow: 0px 1px 3px $contentColor2;
     justify-content: flex-end;
     
   }
