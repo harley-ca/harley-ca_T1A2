@@ -95,7 +95,7 @@ $gap-size: ($button-size * 1.1);
   header {
     display: flex;
   }
-  .menu {
+  nav {
     display: none;
   }
 }
@@ -112,7 +112,7 @@ body {
 }
 
 /* Dropdown menu for navigation on mobile devices */
-.menu {
+nav {
   position: fixed;
   padding-top: 0;
   right: 25%;

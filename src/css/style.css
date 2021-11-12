@@ -76,7 +76,7 @@ body {
 }
 
 /* Dropdown menu for navigation on mobile devices */
-.menu {
+nav {
   position: fixed;
   padding-top: 0;
   right: 25%;
@@ -84,7 +84,7 @@ body {
   font-size: 20px;
 }
 
-.menu span {
+nav span {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -108,13 +108,13 @@ body {
           box-sizing: border-box;
 }
 
-.menu span:hover {
+nav span:hover {
   background-color: black;
   color: white;
   border: 6px solid white;
 }
 
-.menu a {
+nav a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -138,35 +138,35 @@ body {
           box-sizing: border-box;
 }
 
-.menu a:hover {
+nav a:hover {
   background-color: black;
   color: white;
   border: 6px solid white;
 }
 
-.menu a.hidden {
+nav a.hidden {
   visibility: hidden;
 }
 
-.menu a:nth-child(1).show {
+nav a:nth-child(1).show {
   -webkit-transform: translate(0px, 82.5px);
           transform: translate(0px, 82.5px);
   visibility: visible;
 }
 
-.menu a:nth-child(2).show {
+nav a:nth-child(2).show {
   -webkit-transform: translate(0px, 165px);
           transform: translate(0px, 165px);
   visibility: visible;
 }
 
-.menu a:nth-child(3).show {
+nav a:nth-child(3).show {
   -webkit-transform: translate(0px, 247.5px);
           transform: translate(0px, 247.5px);
   visibility: visible;
 }
 
-.menu a:nth-child(4).show {
+nav a:nth-child(4).show {
   -webkit-transform: translate(0px, 330px);
           transform: translate(0px, 330px);
   visibility: visible;
@@ -425,7 +425,7 @@ main .aboutLinks a:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  body .menu {
+  body nav {
     display: none;
   }
 }
@@ -447,7 +447,7 @@ main .aboutLinks a:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  body .menu {
+  body nav {
     display: none;
   }
 }
@@ -486,7 +486,7 @@ main .aboutLinks a:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  body .menu {
+  body nav {
     display: none;
   }
 }
@@ -512,7 +512,7 @@ main .aboutLinks a:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  body .menu {
+  body nav {
     display: none;
   }
 }
@@ -524,7 +524,7 @@ main .aboutLinks a:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  body .menu {
+  body nav {
     display: none;
   }
 }
