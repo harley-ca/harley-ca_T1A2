@@ -221,7 +221,7 @@ footer {
 
 
 /* Styling main content wrapper for all pages */
-.mainContent {
+main {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -351,7 +351,7 @@ footer {
 @media only screen and (min-width: 1000px) {
 
   body {
-    .mainContent {
+    main {
       max-width: 70%;
     }
     .logo {
@@ -381,7 +381,7 @@ footer {
 @media only screen and (min-width: 1400px) {
 
   body {
-    .mainContent {
+    main {
       max-width: 50%;
     }
     .blogItem {
