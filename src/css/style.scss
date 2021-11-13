@@ -272,7 +272,7 @@ main {
 
 /* Styles the blog posts, including images.
   uses nth-child in media queries to alternate post styles for variety*/
-.blogItem {
+article {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -291,7 +291,7 @@ main {
     text-align: center;
     font-weight: bold;
   }
-  .blogDate {
+  time {
     display: flex;
     width: 100%;
     font-size: 1.5em;
@@ -321,7 +321,7 @@ main {
 }
 
 #worksTitle {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
   
@@ -330,9 +330,9 @@ main {
   body {
     @include swapToHeader()
   }
-  // #worksTitle {
-  //   margin-top: 0;
-  // }
+  #worksTitle {
+    margin-top: 0;
+  }
 }
 
 /* Ignore a small window if on desktop */
@@ -363,7 +363,7 @@ main {
       max-width: 20%;
       max-height: 20%;
     }
-    .blogItem {
+    article {
       flex-direction: row;
       justify-content: space-evenly;
       &:nth-child(even) {
@@ -389,7 +389,7 @@ main {
     main {
       max-width: 50%;
     }
-    .blogItem {
+    article {
       flex-direction: row;
       &:nth-child(even) {
         img {

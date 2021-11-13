@@ -347,7 +347,7 @@ main .aboutLinks a:hover {
 
 /* Styles the blog posts, including images.
   uses nth-child in media queries to alternate post styles for variety*/
-.blogItem {
+article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,20 +365,20 @@ main .aboutLinks a:hover {
   border: inset 5px rgba(255, 255, 255, 0.3);
 }
 
-.blogItem img {
+article img {
   max-width: 90%;
   max-height: 70%;
   border: inset 3px rgba(255, 255, 255, 0.3);
   margin: 10px;
 }
 
-.blogItem h3 {
+article h3 {
   width: 80%;
   text-align: center;
   font-weight: bold;
 }
 
-.blogItem .blogDate {
+article time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,7 +419,7 @@ main .aboutLinks a:hover {
 }
 
 #worksTitle {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 /* Small devices (portrait tablets and large phones, up to ) */
@@ -431,6 +431,9 @@ main .aboutLinks a:hover {
   }
   body nav {
     display: none;
+  }
+  #worksTitle {
+    margin-top: 0;
   }
 }
 
@@ -465,7 +468,7 @@ main .aboutLinks a:hover {
     max-width: 20%;
     max-height: 20%;
   }
-  body .blogItem {
+  body article {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -474,15 +477,15 @@ main .aboutLinks a:hover {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  body .blogItem:nth-child(even) img {
+  body article:nth-child(even) img {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
   }
-  body .blogItem img {
+  body article img {
     max-width: 50%;
   }
-  body .blogItem h3 {
+  body article h3 {
     width: 40%;
   }
   body header {
@@ -500,13 +503,13 @@ main .aboutLinks a:hover {
   body main {
     max-width: 50%;
   }
-  body .blogItem {
+  body article {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  body .blogItem:nth-child(even) img {
+  body article:nth-child(even) img {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
