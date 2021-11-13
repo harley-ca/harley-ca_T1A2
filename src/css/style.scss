@@ -225,7 +225,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
   max-height: 100%;
   max-width: 90%;
   margin: auto;
@@ -290,7 +289,7 @@ article {
     text-align: center;
     font-weight: bold;
   }
-  time {
+  .blogDate {
     display: flex;
     width: 100%;
     font-size: 1.5em;

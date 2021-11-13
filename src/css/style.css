@@ -292,9 +292,6 @@ main {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
   max-height: 100%;
   max-width: 90%;
   margin: auto;
@@ -376,7 +373,7 @@ article h3 {
   font-weight: bold;
 }
 
-article time {
+article .blogDate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
