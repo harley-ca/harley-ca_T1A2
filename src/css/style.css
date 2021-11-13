@@ -323,8 +323,6 @@ main h3 {
 
 main p {
   font-size: 1.2em;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   padding: inherit;
   line-height: 1.2em;
 }
@@ -424,6 +422,9 @@ article time {
 
 /* Small devices (portrait tablets and large phones, up to ) */
 @media only screen and (min-width: 570px) {
+  body main {
+    max-width: 80%;
+  }
   body header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -462,7 +463,7 @@ article time {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1000px) {
   body main {
-    max-width: 70%;
+    max-width: 65%;
   }
   body .logo {
     max-width: 20%;
