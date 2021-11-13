@@ -248,8 +248,8 @@ footer a:hover {
             transform: translate(0, 0px);
   }
   65% {
-    -webkit-transform: translate(0, 15px);
-            transform: translate(0, 15px);
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
   }
   to {
     -webkit-transform: translate(0, 0px);
@@ -262,8 +262,8 @@ footer a:hover {
             transform: translate(0, 0px);
   }
   65% {
-    -webkit-transform: translate(0, 15px);
-            transform: translate(0, 15px);
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
   }
   to {
     -webkit-transform: translate(0, 0px);
@@ -418,8 +418,8 @@ main .aboutLinks a:hover {
   margin-bottom: 0.5em;
 }
 
-.spacer {
-  height: 10%;
+#worksTitle {
+  margin-top: 50px;
 }
 
 /* Small devices (portrait tablets and large phones, up to ) */
@@ -430,9 +430,6 @@ main .aboutLinks a:hover {
     display: flex;
   }
   body nav {
-    display: none;
-  }
-  .spacer {
     display: none;
   }
 }
@@ -455,9 +452,6 @@ main .aboutLinks a:hover {
     display: flex;
   }
   body nav {
-    display: none;
-  }
-  .spacer {
     display: none;
   }
 }
@@ -499,9 +493,6 @@ main .aboutLinks a:hover {
   body nav {
     display: none;
   }
-  .spacer {
-    display: none;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -528,9 +519,6 @@ main .aboutLinks a:hover {
   body nav {
     display: none;
   }
-  .spacer {
-    display: none;
-  }
 }
 
 /* Swap to header navigation and disable logo in header for landscape devices */
@@ -541,9 +529,6 @@ main .aboutLinks a:hover {
     display: flex;
   }
   body nav {
-    display: none;
-  }
-  .spacer {
     display: none;
   }
 }
